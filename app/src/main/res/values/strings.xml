@@ -14,4 +14,7 @@
     <string name="type">Type: </string>
     <string name="program">Program: </string>
     <string name="phone">Phone: </string>
+    <string name="visiting_hours">Hours: </string>
+    <string name="web">Web: </string>
+    <string name="email">Email: </string>
 </resources>

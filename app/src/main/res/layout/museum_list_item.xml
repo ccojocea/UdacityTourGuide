@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:descendantFocusability="blocksDescendants"
-    android:orientation="vertical"
     android:padding="@dimen/padding_m"
     tools:context=".CategoryActivity">
 
@@ -18,62 +17,129 @@
         tools:textColor="@color/colorPrimary" />
 
     <View
+        android:id="@+id/separator"
         android:layout_width="match_parent"
+        android:layout_below="@id/museum_name"
         android:layout_height="1dp"
         android:layout_marginBottom="@dimen/margin_s"
         android:background="@android:color/white"
         tools:background="@color/colorPrimary" />
 
-    <TextView
-        android:id="@+id/museum_web"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoLink="web"
-        android:maxEms="20"
-        android:textColor="@android:color/white"
-        tools:text="www.really-awesome-museum.com.ro"
-        tools:textColor="@color/colorPrimary" />
+    <ImageView
+        android:id="@+id/museum_image"
+        android:layout_below="@id/separator"
+        android:layout_width="100dp"
+        android:layout_height="134dp"
+        android:layout_marginEnd="@dimen/margin_s"
+        tools:src="@drawable/museum_art_thumb"/>
 
     <TextView
-        android:id="@+id/museum_mail"
+        android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoLink="email"
-        android:maxEms="20"
+        android:layout_toEndOf="@id/museum_image"
+        android:layout_below="@id/separator"
         android:textColor="@android:color/white"
-        tools:text="awesomemuseum@gmail.com"
+        android:text="@string/address"
         tools:textColor="@color/colorPrimary" />
 
     <TextView
         android:id="@+id/museum_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxEms="18"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/separator"
+        android:maxEms="12"
         android:textColor="@android:color/white"
         tools:text="Museum Address"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/museum_image"
+        android:layout_below="@id/museum_address"
+        android:textColor="@android:color/white"
+        android:text="@string/visiting_hours"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/museum_visiting_hours"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/museum_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:maxEms="14"
+        tools:text="Mon-Fri: 12:00 - 23:00\nSat-Sun: 14:00 - 22:00"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/museum_image"
+        android:layout_below="@id/museum_visiting_hours"
+        android:textColor="@android:color/white"
+        android:text="@string/web"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/museum_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/museum_visiting_hours"
+        android:autoLink="web"
+        android:maxEms="14"
+        android:textColor="@android:color/white"
+        android:textAlignment="textEnd"
+        tools:text="www.rea.rea.rea.re.re.re.re.rr.com.ro"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/museum_image"
+        android:layout_below="@id/museum_web"
+        android:textColor="@android:color/white"
+        android:text="@string/email"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/museum_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/museum_web"
+        android:textAlignment="textEnd"
+        android:autoLink="email"
+        android:maxEms="14"
+        android:textColor="@android:color/white"
+        tools:text="awesomemuseum@gmail.com"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/museum_image"
+        android:layout_below="@id/museum_mail"
+        android:textColor="@android:color/white"
+        android:text="@string/phone"
         tools:textColor="@color/colorPrimary" />
 
     <TextView
         android:id="@+id/museum_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/museum_mail"
         android:autoLink="phone"
         android:textColor="@android:color/white"
         tools:text="+40753033202"
         tools:textColor="@color/colorPrimary" />
 
-    <TextView
-        android:id="@+id/museum_visiting_hours"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        tools:text="Mon-Fri: 12:00 - 23:00\nSat-Sun: 14:00 - 22:00"
-        tools:textColor="@color/colorPrimary" />
-
-    <ImageView
-        android:id="@+id/museum_image"
-        android:layout_width="100dp"
-        android:layout_height="134dp"
-        tools:src="@drawable/museum_art_thumb"/>
-
-</LinearLayout>
+</RelativeLayout>

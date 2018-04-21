@@ -48,10 +48,11 @@ public class MuseumAdapter extends ArrayAdapter<Museum> {
         emailTV.setText(currentMuseum.getmEMail());
         visitingTV.setText(currentMuseum.getmVisitingHours());
         if(currentMuseum.hasImage()){
-            imgIV.setVisibility(View.VISIBLE);
+            //imgIV.setVisibility(View.VISIBLE);
             imgIV.setImageResource(currentMuseum.getmImageId());
         } else {
-            imgIV.setVisibility(View.GONE);
+            //imgIV.setVisibility(View.GONE);
+            imgIV.setImageResource(R.drawable.default_image_thumb);
         }
 
         return convertView;
