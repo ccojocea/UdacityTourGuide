@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cluj Tour Guide App</string>
+    <string name="app_name">Cluj-Napoca Tour Guide App</string>
     <string name="cluj_city">Cluj-Napoca, Romania</string>
     <string name="cluj_description">Cluj-Napoca, a city in northwestern Romania, is the unofficial
         capital of the Transylvania region. It is home to universities, vibrant nightlife and
@@ -9,4 +9,9 @@
     <string name="category_2">Museums</string>
     <string name="category_3">Tours</string>
     <string name="category_4">Parks</string>
+
+    <string name="address">Address: </string>
+    <string name="type">Type: </string>
+    <string name="program">Program: </string>
+    <string name="phone">Phone: </string>
 </resources>

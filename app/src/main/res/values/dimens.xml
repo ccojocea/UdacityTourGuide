@@ -5,4 +5,8 @@
     <dimen name="text_font_size_m">16sp</dimen>
     <dimen name="text_font_size_s">11sp</dimen>
     <dimen name="text_font_size_xs">8sp</dimen>
+    <dimen name="padding_m">16dp</dimen>
+    <dimen name="padding_s">8dp</dimen>
+    <dimen name="margin_m">16dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
 </resources>

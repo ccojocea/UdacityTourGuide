@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.ccojo.clujtourguideapp.MainActivity">
 
     <ImageView
@@ -64,6 +65,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
         android:text="@string/cluj_description"
         android:textSize="@dimen/text_font_size_m"
         app:layout_constraintEnd_toEndOf="parent"
