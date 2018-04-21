@@ -42,6 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:textColor="@android:color/white"
+            android:maxEms="20"
             tools:text="Indian, Chinese, Japanese, European"
             tools:textColor="@color/colorPrimary"/>
 
@@ -65,6 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:textColor="@android:color/white"
+            android:maxEms="18"
             tools:text="Restaurant Address"
             tools:textColor="@color/colorPrimary"/>
 

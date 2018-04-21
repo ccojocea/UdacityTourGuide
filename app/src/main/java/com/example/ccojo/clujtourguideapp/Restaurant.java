@@ -5,17 +5,15 @@ package com.example.ccojo.clujtourguideapp;
  */
 
 public class Restaurant {
-    //TODO: ADD GEOLOCATION INFO TO OPEN GOOGLE MAPS TO RESTAURANT LOCATION
-
     private String mName;
     private String mAddress;
     private String mPhone;
     private String[] mType;
     private String mProgram;
-    private Double mLat;
-    private Double mLong;
+    private double mLat;
+    private double mLong;
 
-    public Restaurant(String name, String address, String phone, String[] type, String program, Double mLat, Double mLong){
+    public Restaurant(String name, String address, String phone, String[] type, String program, double mLat, double mLong){
         this.mName = name;
         this.mAddress = address;
         this.mPhone = phone;
