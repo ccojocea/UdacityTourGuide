@@ -1,9 +1,34 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/item_detail_text"
-    style="?android:attr/textAppearanceLarge"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:textIsSelectable="true"
-    tools:context="com.example.ccojo.clujtourguideapp.ItemDetailFragment" />
+    android:padding="@dimen/padding_m"
+    android:layout_marginTop="@dimen/margin_m"
+    tools:context="com.example.ccojo.clujtourguideapp.ItemDetailFragment">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="@dimen/margin_s"
+        tools:src="@drawable/tour_cluj"/>
+
+    <TextView
+        android:id="@+id/item_name_textview"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="@dimen/margin_s"
+        tools:text="Item Detail Name Goes Here! Warning: It can be a very long one!"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_below="@id/item_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

@@ -169,7 +169,7 @@
         android:layout_below="@id/tour_image"
         android:autoLink="phone"
         android:text="@string/tour_details"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textColor="@android:color/white"
         tools:textColor="@color/colorPrimary" />
 

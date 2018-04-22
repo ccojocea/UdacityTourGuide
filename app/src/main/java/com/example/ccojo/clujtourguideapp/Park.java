@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 
 public class Park extends Item implements Serializable{
+    private String mShortName;
     private String mName;
     private String mAddress;
     private String mWeb;
@@ -16,9 +17,11 @@ public class Park extends Item implements Serializable{
     private double mLat;
     private double mLong;
     private int mImageResourceId = NOIMAGE;
+    private int mFullImageResourceId = NOIMAGE;
     public static final int NOIMAGE = -1;
 
-    public Park(String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong) {
+    public Park(String shortName, String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, int mFullImageResourceId,double mLat, double mLong) {
+        this.mShortName = shortName;
         this.mName = mName;
         this.mAddress = mAddress;
         this.mWeb = mWeb;
@@ -28,6 +31,20 @@ public class Park extends Item implements Serializable{
         this.mLat = mLat;
         this.mLong = mLong;
         this.mImageResourceId = mImageResourceId;
+        this.mFullImageResourceId = mFullImageResourceId;
+    }
+
+    public String getmShortName() {
+        return mShortName;
+    }
+
+    @Override
+    public int getmFullImageResourceId() {
+        return mFullImageResourceId;
+    }
+
+    public boolean hasFullSizeImage() {
+        return mFullImageResourceId != NOIMAGE;
     }
 
     public String getmName() {

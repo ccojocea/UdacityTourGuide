@@ -150,7 +150,7 @@
         android:layout_below="@id/park_image"
         android:autoLink="phone"
         android:text="@string/park_details"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textColor="@android:color/white"
         tools:textColor="@color/colorPrimary" />
 

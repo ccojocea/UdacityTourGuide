@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 
 public class Item implements Serializable{
+    private String mShortName;
     private String mName;
     private String mAddress;
     private String mWeb;
@@ -25,6 +26,13 @@ public class Item implements Serializable{
     private String[] mHighlights;
 
     public static final int NOIMAGE = -1;
+
+    public String getmShortName() {
+        return mShortName;
+    }
+
+    public boolean hasImage(){return false;}
+    public boolean hasFullSizeImage(){return false;}
 
     public String getmName() {
         return mName;

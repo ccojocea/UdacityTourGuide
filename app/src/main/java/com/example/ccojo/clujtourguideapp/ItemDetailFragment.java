@@ -1,14 +1,12 @@
 package com.example.ccojo.clujtourguideapp;
 
-import android.app.Activity;
-import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -46,17 +44,17 @@ public class ItemDetailFragment extends Fragment {
         appBarLayout = (CollapsingToolbarLayout) getActivity().findViewById(R.id.toolbar_layout);
 
         if (appBarLayout != null) {
-            if(mItem.getClass() == Park.class){
-                appBarLayout.setTitle(getString(R.string.park_detail));
-            }
-            if(mItem.getClass() == Tour.class){
-                appBarLayout.setTitle(getString(R.string.tour_detail));
-            }
+            appBarLayout.setTitle(mItem.getmShortName());
         }
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail_text)).setText(mItem.getmName());
+            ((TextView) rootView.findViewById(R.id.item_name_textview)).setText(mItem.getmName());
+            if(mItem.hasFullSizeImage()){
+                ((ImageView) rootView.findViewById(R.id.image_view)).setImageResource(mItem.getmFullImageResourceId());
+            } else {
+                rootView.findViewById(R.id.image_view).setVisibility(View.GONE);
+            }
         }
 
         return rootView;
