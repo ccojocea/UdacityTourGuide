@@ -1,11 +1,13 @@
 package com.example.ccojo.clujtourguideapp;
 
+import android.net.Uri;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -17,6 +19,7 @@ import android.view.MenuItem;
  * in a {@link ItemDetailActivity}.
  */
 public class ItemDetailActivity extends AppCompatActivity {
+    private Item mItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +29,7 @@ public class ItemDetailActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own detail action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         // Show the Up button in the action bar.
         ActionBar actionBar = getSupportActionBar();
@@ -53,12 +49,45 @@ public class ItemDetailActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
+
             Bundle arguments = new Bundle();
             arguments.putAll(getIntent().getExtras());
             //arguments.putString(ItemDetailFragment.ARG_ITEM_ID, getIntent().getStringExtra(ItemDetailFragment.ARG_ITEM_ID));
             ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction().add(R.id.item_detail_container, fragment).commit();
+        }
+
+        if(getIntent().getExtras().containsKey("TOUR")){
+            mItem = (Tour) getIntent().getExtras().getSerializable("TOUR");
+        }
+        if(getIntent().getExtras().containsKey("PARK")){
+            mItem = (Park) getIntent().getExtras().getSerializable("PARK");
+        }
+
+
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Open location on map", Snackbar.LENGTH_LONG)
+                        .setAction("MAP", new MyMapListener()).show();
+            }
+        });
+
+    }
+
+    public class MyMapListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            String mTitle = String.valueOf(mItem.getmName());
+            String mLat = String.valueOf(mItem.getmLat());
+            String mLong = String.valueOf(mItem.getmLong());
+            String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
+            final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
+            getApplicationContext().startActivity(intent);
         }
     }
 
