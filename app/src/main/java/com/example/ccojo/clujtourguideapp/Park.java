@@ -64,7 +64,7 @@ public class Park {
         return mImageResourceId;
     }
 
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageResourceId != NOIMAGE;
     }
 }

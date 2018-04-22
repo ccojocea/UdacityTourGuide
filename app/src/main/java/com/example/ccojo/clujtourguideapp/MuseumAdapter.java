@@ -20,7 +20,7 @@ public class MuseumAdapter extends ArrayAdapter<Museum> {
 
     private static final String TAG = "MuseumAdapter";
 
-    public MuseumAdapter(@NonNull Context context, @NonNull ArrayList<Museum> museums){
+    public MuseumAdapter(@NonNull Context context, @NonNull ArrayList<Museum> museums) {
         super(context, 0, museums);
     }
 
@@ -29,7 +29,7 @@ public class MuseumAdapter extends ArrayAdapter<Museum> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Museum currentMuseum = getItem(position);
 
-        if(convertView == null){
+        if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.museum_list_item, parent, false);
         }
 
@@ -47,7 +47,7 @@ public class MuseumAdapter extends ArrayAdapter<Museum> {
         webTV.setText(currentMuseum.getmWeb());
         emailTV.setText(currentMuseum.getmEMail());
         visitingTV.setText(currentMuseum.getmVisitingHours());
-        if(currentMuseum.hasImage()){
+        if (currentMuseum.hasImage()) {
             //imgIV.setVisibility(View.VISIBLE);
             imgIV.setImageResource(currentMuseum.getmImageId());
         } else {

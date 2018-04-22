@@ -16,7 +16,7 @@ public class Museum {
     private double mLong;
     private static final int NOIMAGE = -1;
 
-    public Museum(String name, String address, String phone, String web, String email, String mVisitingHours, int image, double lat, double lon){
+    public Museum(String name, String address, String phone, String web, String email, String mVisitingHours, int image, double lat, double lon) {
         this.mName = name;
         this.mAddress = address;
         this.mPhone = phone;
@@ -28,7 +28,7 @@ public class Museum {
         this.mLong = lon;
     }
 
-    public Museum(String name, String address, String phone, String web, String email, String mVisitingHours, double lat, double lon){
+    public Museum(String name, String address, String phone, String web, String email, String mVisitingHours, double lat, double lon) {
         this.mName = name;
         this.mAddress = address;
         this.mPhone = phone;
@@ -39,7 +39,7 @@ public class Museum {
         this.mLong = lon;
     }
 
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageId != NOIMAGE;
     }
 

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.Currency;
 import java.util.Locale;
@@ -27,8 +28,8 @@ public class TourAdapter extends ArrayAdapter<Tour> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Tour currentTour = getItem(position);
 
-        if(convertView == null){
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.tour_list_item, parent,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.tour_list_item, parent, false);
         }
 
         TextView nameTV = convertView.findViewById(R.id.tour_name);
@@ -43,27 +44,27 @@ public class TourAdapter extends ArrayAdapter<Tour> {
         nameTV.setText(currentTour.getmName());
         addressTV.setText(currentTour.getmAddress());
         //TODO: calculate price based on currency conversion?
-        if(currentTour.getmPrice() != -1){
+        if (currentTour.getmPrice() != -1) {
             priceTV.setText(currentTour.getmPrice() + " " + Currency.getInstance(Locale.getDefault()).getSymbol());
         } else {
             priceTV.setText(getContext().getString(R.string.no_price));
         }
-        if(!currentTour.getmPhone().equals("")){
+        if (!currentTour.getmPhone().equals("")) {
             phoneTV.setText(currentTour.getmPhone());
         } else {
             phoneTV.setText(getContext().getString(R.string.no_phone));
         }
-        if(!currentTour.getmWeb().equals("")){
+        if (!currentTour.getmWeb().equals("")) {
             webTV.setText(currentTour.getmWeb());
         } else {
             webTV.setText(getContext().getString(R.string.no_web));
         }
-        if(!currentTour.getmEmail().equals("")){
+        if (!currentTour.getmEmail().equals("")) {
             emailTV.setText(currentTour.getmEmail());
         } else {
             emailTV.setText(getContext().getString(R.string.no_mail));
         }
-        if(!currentTour.getmHours().equals("")){
+        if (!currentTour.getmHours().equals("")) {
             visitingTV.setText(currentTour.getmHours());
         } else {
             visitingTV.setText(getContext().getString(R.string.no_hours));

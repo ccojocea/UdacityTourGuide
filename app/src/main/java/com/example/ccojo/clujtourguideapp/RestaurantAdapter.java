@@ -18,10 +18,10 @@ import static android.text.util.Linkify.PHONE_NUMBERS;
  * Created by ccojo on 4/21/2018.
  */
 
-public class RestaurantAdapter extends ArrayAdapter<Restaurant>{
+public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
     private static final String TAG = "RestaurantAdapter";
 
-    public RestaurantAdapter(@NonNull Context context, @NonNull ArrayList<Restaurant> restaurants){
+    public RestaurantAdapter(@NonNull Context context, @NonNull ArrayList<Restaurant> restaurants) {
         super(context, 0, restaurants);
     }
 
@@ -30,7 +30,7 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant>{
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Restaurant currentRestaurant = getItem(position);
 
-        if(convertView == null){
+        if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.restaurant_list_item, parent, false);
         }
 
@@ -46,8 +46,8 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant>{
         Log.d(TAG, "getPhone: " + currentRestaurant.getmPhone());
         //phoneTV.setAutoLinkMask(PHONE_NUMBERS);
         String type = "";
-        for(String str : currentRestaurant.getmType()){
-            if(type.equals("")){
+        for (String str : currentRestaurant.getmType()) {
+            if (type.equals("")) {
                 type += str;
             } else {
                 type += ", " + str;

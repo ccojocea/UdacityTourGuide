@@ -27,7 +27,7 @@ public class ParkFragment extends Fragment {
         final ArrayList<Park> parks = new ArrayList<>();
         //String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong
         parks.add(new Park("Simion Bărnuțiu Central Park", "Cardinal Hossu Iuliu Street", "+40720425741", "http://www.primariaclujnapoca.ro/", "", "Open 24 hours", R.drawable.park_central_thumb, 46.768578, 23.578762));
-        parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
+        parks.add(new Park("Botanical Garden", "42 Republicii Street", "+40264592152", "", "gradina.botanica@ubbcluj.ro", "09:00 - 20:00\nGlass Houses: 09:00 - 18:00", R.drawable.park_botanical_thumb, 46.762585, 23.588517));
         parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
         parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
         parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));

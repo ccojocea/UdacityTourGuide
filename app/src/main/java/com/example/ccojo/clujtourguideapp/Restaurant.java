@@ -13,7 +13,7 @@ public class Restaurant {
     private double mLat;
     private double mLong;
 
-    public Restaurant(String name, String address, String phone, String[] type, String program, double mLat, double mLong){
+    public Restaurant(String name, String address, String phone, String[] type, String program, double mLat, double mLong) {
         this.mName = name;
         this.mAddress = address;
         this.mPhone = phone;

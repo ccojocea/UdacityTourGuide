@@ -43,11 +43,11 @@ public class Tour {
         this.mFullImageResourceId = mFullImageResourceId;
     }
 
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageResourceId != NOIMAGE;
     }
 
-    public boolean hasFullSizeImage(){
+    public boolean hasFullSizeImage() {
         return mFullImageResourceId != NOIMAGE;
     }
 
