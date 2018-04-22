@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/white"
         android:maxEms="14"
-        tools:text="Mon-Fri: 12:00 - 23:00\nSat-Sun: 14:00 - 22:00"
+        android:text="@string/no_hours"
         tools:textColor="@color/colorPrimary" />
 
     <TextView
@@ -95,7 +95,7 @@
         android:maxEms="14"
         android:textColor="@android:color/white"
         android:textAlignment="textEnd"
-        tools:text="www.rea.rea.rea.re.re.re.re.rr.com.ro"
+        android:text="@string/no_web"
         tools:textColor="@color/colorPrimary" />
 
     <TextView
@@ -118,7 +118,7 @@
         android:autoLink="email"
         android:maxEms="14"
         android:textColor="@android:color/white"
-        tools:text="awesometour@gmail.com"
+        android:text="@string/no_mail"
         tools:textColor="@color/colorPrimary" />
 
     <TextView
@@ -139,7 +139,7 @@
         android:layout_below="@id/tour_mail"
         android:autoLink="phone"
         android:textColor="@android:color/white"
-        tools:text="+40753033123"
+        android:text="@string/no_phone"
         tools:textColor="@color/colorPrimary" />
 
     <TextView

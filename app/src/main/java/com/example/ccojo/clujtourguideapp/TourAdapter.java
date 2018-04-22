@@ -28,16 +28,16 @@ public class TourAdapter extends ArrayAdapter<Tour> {
         Tour currentTour = getItem(position);
 
         if(convertView == null){
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.category_list_item, parent,false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.tour_list_item, parent,false);
         }
 
-        TextView nameTV = convertView.findViewById(R.id.category_item_name);
-        TextView addressTV = convertView.findViewById(R.id.category_item_address);
-        TextView phoneTV = convertView.findViewById(R.id.category_item_phone);
-        TextView webTV = convertView.findViewById(R.id.category_item_web);
-        TextView emailTV = convertView.findViewById(R.id.category_item_mail);
-        TextView visitingTV = convertView.findViewById(R.id.category_item_visiting_hours);
-        ImageView imgIV = convertView.findViewById(R.id.category_item_image);
+        TextView nameTV = convertView.findViewById(R.id.tour_name);
+        TextView addressTV = convertView.findViewById(R.id.tour_address);
+        TextView phoneTV = convertView.findViewById(R.id.tour_phone);
+        TextView webTV = convertView.findViewById(R.id.tour_web);
+        TextView emailTV = convertView.findViewById(R.id.tour_mail);
+        TextView visitingTV = convertView.findViewById(R.id.tour_visiting_hours);
+        ImageView imgIV = convertView.findViewById(R.id.tour_image);
 
         nameTV.setText(currentTour.getmName());
         addressTV.setText(currentTour.getmAddress());
