@@ -2,17 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/padding_m"
     android:layout_marginTop="@dimen/margin_m"
+    android:padding="@dimen/padding_m"
     tools:context="com.example.ccojo.clujtourguideapp.ItemDetailFragment">
 
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
         android:layout_marginBottom="@dimen/margin_s"
-        tools:src="@drawable/tour_cluj"/>
+        android:adjustViewBounds="true"
+        tools:src="@drawable/tour_cluj" />
 
     <TextView
         android:id="@+id/item_name_textview"
@@ -20,15 +20,238 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/image_view"
-        android:textIsSelectable="true"
         android:layout_marginBottom="@dimen/margin_s"
-        tools:text="Item Detail Name Goes Here! Warning: It can be a very long one!"/>
+        android:textIsSelectable="true"
+        tools:text="Item Detail Name Goes Here! Warning: It can be a very long one!" />
+
+    <RelativeLayout
+        android:id="@+id/container_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name_textview"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/top_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_s"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_separator"
+            android:layout_marginBottom="@dimen/margin_s"
+            tools:text="Here comes the Item description"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/highlights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_description"
+            android:text="@string/highlights"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_highlights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/item_description"
+            android:textAlignment="textEnd"
+            android:ems="18"
+            android:text="@string/no_highlights"
+            tools:text="Item Highlights 1\nItem Highlights 2\nItem Highlights 3"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/depart_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_highlights"
+            android:text="@string/depart_point"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_depart_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/item_highlights"
+            android:text="@string/no_depart_point"
+            android:ems="16"
+            android:textAlignment="textEnd"
+            tools:text="Item Departure Point"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/depart_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_depart_point"
+            android:text="@string/depart_time"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_depart_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:layout_below="@id/item_depart_point"
+            android:text="@string/no_depart_time"
+            tools:text="Item Departure Time"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_depart_time"
+            android:text="@string/duration"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:layout_below="@id/item_depart_time"
+            android:text="@string/unknown_duration"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_duration"
+            android:text="@string/price"
+            tools:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:layout_below="@id/item_duration"
+            android:text="@string/no_price"
+            tools:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
 
     <View
         android:id="@+id/separator"
-        android:layout_below="@id/item_name_textview"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorPrimary"/>
+        android:layout_below="@id/container_relative"
+        android:layout_marginTop="@dimen/margin_s"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/address"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="@dimen/margin_s"
+        android:maxEms="16"
+        android:text="@string/no_address"
+        tools:text="item Address item Address item Address item Address item Address item Address item Address "
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_address"
+        android:text="@string/visiting_hours"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/item_visiting_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/item_address"
+        android:maxEms="16"
+        android:text="@string/no_hours"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_visiting_hours"
+        android:text="@string/web"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/item_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/item_visiting_hours"
+        android:autoLink="web"
+        android:maxEms="16"
+        android:text="@string/no_web"
+        android:textAlignment="textEnd"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_web"
+        android:text="@string/email"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/item_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/item_web"
+        android:autoLink="email"
+        android:maxEms="16"
+        android:text="@string/no_mail"
+        android:textAlignment="textEnd"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_mail"
+        android:text="@string/phone"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/item_mail"
+        android:autoLink="phone"
+        android:text="@string/no_phone"
+        tools:textColor="@color/colorPrimary" />
+
+    <View
+        android:layout_below="@id/item_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_m" />
 
 </RelativeLayout>

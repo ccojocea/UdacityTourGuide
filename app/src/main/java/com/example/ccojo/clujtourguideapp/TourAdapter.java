@@ -42,12 +42,11 @@ public class TourAdapter extends ArrayAdapter<Tour> {
         TextView priceTV = convertView.findViewById(R.id.tour_price);
 
         nameTV.setText(currentTour.getmName());
-        addressTV.setText(currentTour.getmAddress());
-        //TODO: calculate price based on currency conversion?
-        if (currentTour.getmPrice() != -1) {
-            priceTV.setText(currentTour.getmPrice() + " " + Currency.getInstance(Locale.getDefault()).getSymbol());
+
+        if(!currentTour.getmAddress().equals("")){
+            addressTV.setText(currentTour.getmAddress());
         } else {
-            priceTV.setText(getContext().getString(R.string.no_price));
+            addressTV.setText(getContext().getString(R.string.no_address));
         }
         if (!currentTour.getmPhone().equals("")) {
             phoneTV.setText(currentTour.getmPhone());
@@ -73,6 +72,12 @@ public class TourAdapter extends ArrayAdapter<Tour> {
             imgIV.setImageResource(currentTour.getmImageResourceId());
         } else {
             imgIV.setImageResource(R.drawable.default_image_thumb);
+        }
+        //TODO: REFINE THIS FOR CURRENCY SYMBOL AND CONVERSION
+        if (currentTour.getmPrice() != -1) {
+            priceTV.setText(currentTour.getmPrice() + " " + Currency.getInstance(Locale.getDefault()).getSymbol());
+        } else {
+            priceTV.setText(getContext().getString(R.string.no_price));
         }
 
         return convertView;
