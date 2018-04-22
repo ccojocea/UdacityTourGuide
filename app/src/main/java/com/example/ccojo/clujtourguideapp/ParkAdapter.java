@@ -42,15 +42,23 @@ public class ParkAdapter extends ArrayAdapter<Park>{
         addressTV.setText(currentPark.getmAddress());
         if(!currentPark.getmPhone().equals("")){
             phoneTV.setText(currentPark.getmPhone());
+        } else {
+            phoneTV.setText(getContext().getString(R.string.no_phone));
         }
         if(!currentPark.getmWeb().equals("")){
             webTV.setText(currentPark.getmWeb());
+        } else {
+            webTV.setText(getContext().getString(R.string.no_web));
         }
         if(!currentPark.getmEmail().equals("")){
             emailTV.setText(currentPark.getmEmail());
+        } else {
+            emailTV.setText(getContext().getString(R.string.no_mail));
         }
         if(!currentPark.getmHours().equals("")){
             visitingTV.setText(currentPark.getmHours());
+        } else {
+            visitingTV.setText(getContext().getString(R.string.no_hours));
         }
         if(currentPark.hasImage()){
             imgIV.setImageResource(currentPark.getmImageResourceId());

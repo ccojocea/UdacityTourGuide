@@ -13,17 +13,18 @@ public class Tour {
     private String mHours;
     private double mLat;
     private double mLong;
-    private int mImageResourceId = NOIMAGE;
-
     private String mDescription;
     private String mDeparturePoint;
     private String mDepartureTime;
     private int mDuration;
+    private int mImageResourceId = NOIMAGE;
+    public int mFullImageResourceId = NOIMAGE;
+    private int mPrice;
     private String[] mHighlights;
 
-    private static final int NOIMAGE = -1;
+    public static final int NOIMAGE = -1;
 
-    public Tour(String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, String description, String departurePoint, String departureTime, int duration, String[] highlights, int mImageResourceId, double mLat, double mLong) {
+    public Tour(String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, String description, String departurePoint, String departureTime, int duration, String[] highlights, int price, int mImageResourceId, int mFullImageResourceId, double mLat, double mLong) {
         this.mName = mName;
         this.mAddress = mAddress;
         this.mWeb = mWeb;
@@ -38,10 +39,20 @@ public class Tour {
         this.mDepartureTime = departureTime;
         this.mDuration = duration;
         this.mHighlights = highlights;
+        this.mPrice = price;
+        this.mFullImageResourceId = mFullImageResourceId;
     }
 
     public boolean hasImage(){
         return mImageResourceId != NOIMAGE;
+    }
+
+    public boolean hasFullSizeImage(){
+        return mFullImageResourceId != NOIMAGE;
+    }
+
+    public int getmPrice() {
+        return mPrice;
     }
 
     public String getmDescription() {

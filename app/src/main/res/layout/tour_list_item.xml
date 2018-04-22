@@ -143,6 +143,26 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tour_image"
+        android:layout_below="@id/tour_phone"
+        android:textColor="@android:color/white"
+        android:text="@string/price"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tour_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tour_phone"
+        android:textColor="@android:color/white"
+        android:text="@string/no_price"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
         android:id="@+id/view_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

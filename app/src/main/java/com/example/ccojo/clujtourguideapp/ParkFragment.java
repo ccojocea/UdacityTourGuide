@@ -26,11 +26,11 @@ public class ParkFragment extends Fragment {
 
         final ArrayList<Park> parks = new ArrayList<>();
         //String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong
-        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
-        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
-        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
-        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
-        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
+        parks.add(new Park("Simion Bărnuțiu Central Park", "Cardinal Hossu Iuliu Street", "+40720425741", "http://www.primariaclujnapoca.ro/", "", "Open 24 hours", R.drawable.park_central_thumb, 46.768578, 23.578762));
+        parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", Park.NOIMAGE, 0.0, 0.0));
         //parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
 
         ParkAdapter adapter = new ParkAdapter(getContext(), parks);
@@ -40,13 +40,13 @@ public class ParkFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String mTitle = parks.get(position).getmName();
-                String mLat = String.valueOf(parks.get(position).getmLat());
-                String mLong = String.valueOf(parks.get(position).getmLong());
-                String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
-
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
-                getContext().startActivity(intent);
+//                String mTitle = parks.get(position).getmName();
+//                String mLat = String.valueOf(parks.get(position).getmLat());
+//                String mLong = String.valueOf(parks.get(position).getmLong());
+//                String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
+//
+//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
+//                getContext().startActivity(intent);
             }
         });
 

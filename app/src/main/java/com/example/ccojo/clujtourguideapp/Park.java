@@ -14,7 +14,7 @@ public class Park {
     private double mLat;
     private double mLong;
     private int mImageResourceId = NOIMAGE;
-    private static final int NOIMAGE = -1;
+    public static final int NOIMAGE = -1;
 
     public Park(String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong) {
         this.mName = mName;

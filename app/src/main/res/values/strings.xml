@@ -17,12 +17,14 @@
     <string name="visiting_hours">Hours: </string>
     <string name="web">Web: </string>
     <string name="email">Email: </string>
+    <string name="price">Price: </string>
     
     <string name="no_web">No web address</string>
     <string name="no_mail">No email address</string>
     <string name="no_phone">No phone number</string>
     <string name="no_hours">Unknown hours</string>
+    <string name="no_price">Unknown price</string>
 
-    <string name="tour_details">Click to view more details about this tour</string>
-    <string name="park_details">Click to view more details about this park</string>
+    <string name="tour_details">Touch to view more details about this tour</string>
+    <string name="park_details">Touch to view more details about this park</string>
 </resources>

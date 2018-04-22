@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Currency;
+import java.util.Locale;
 
 /**
  * Created by ccojo on 4/22/2018.
@@ -38,20 +38,35 @@ public class TourAdapter extends ArrayAdapter<Tour> {
         TextView emailTV = convertView.findViewById(R.id.tour_mail);
         TextView visitingTV = convertView.findViewById(R.id.tour_visiting_hours);
         ImageView imgIV = convertView.findViewById(R.id.tour_image);
+        TextView priceTV = convertView.findViewById(R.id.tour_price);
 
         nameTV.setText(currentTour.getmName());
         addressTV.setText(currentTour.getmAddress());
+        //TODO: calculate price based on currency conversion?
+        if(currentTour.getmPrice() != -1){
+            priceTV.setText(currentTour.getmPrice() + " " + Currency.getInstance(Locale.getDefault()).getSymbol());
+        } else {
+            priceTV.setText(getContext().getString(R.string.no_price));
+        }
         if(!currentTour.getmPhone().equals("")){
             phoneTV.setText(currentTour.getmPhone());
+        } else {
+            phoneTV.setText(getContext().getString(R.string.no_phone));
         }
         if(!currentTour.getmWeb().equals("")){
             webTV.setText(currentTour.getmWeb());
+        } else {
+            webTV.setText(getContext().getString(R.string.no_web));
         }
         if(!currentTour.getmEmail().equals("")){
             emailTV.setText(currentTour.getmEmail());
+        } else {
+            emailTV.setText(getContext().getString(R.string.no_mail));
         }
         if(!currentTour.getmHours().equals("")){
             visitingTV.setText(currentTour.getmHours());
+        } else {
+            visitingTV.setText(getContext().getString(R.string.no_hours));
         }
         if (currentTour.hasImage()) {
             imgIV.setImageResource(currentTour.getmImageResourceId());
