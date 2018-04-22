@@ -1,10 +1,12 @@
 package com.example.ccojo.clujtourguideapp;
 
+import java.io.Serializable;
+
 /**
  * Created by ccojo on 4/22/2018.
  */
 
-public class Tour {
+public class Tour extends Item implements Serializable{
     private String mName;
     private String mAddress;
     private String mWeb;
@@ -49,6 +51,11 @@ public class Tour {
 
     public boolean hasFullSizeImage() {
         return mFullImageResourceId != NOIMAGE;
+    }
+
+    @Override
+    public int getmFullImageResourceId() {
+        return mFullImageResourceId;
     }
 
     public int getmPrice() {

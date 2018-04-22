@@ -1,4 +1,8 @@
 <resources>
+    <string name="item_detail">Item detail</string>
+    <string name="park_detail">Park details</string>
+    <string name="tour_detail">Tour details</string>
+
     <string name="app_name">Cluj-Napoca Tour Guide App</string>
     <string name="cluj_city">Cluj-Napoca, Romania</string>
     <string name="cluj_description">Cluj-Napoca, a city in northwestern Romania, is the unofficial

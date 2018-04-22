@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by ccojo on 4/22/2018.
  */
 
-public class Park extends Item implements Serializable{
+public class Item implements Serializable{
     private String mName;
     private String mAddress;
     private String mWeb;
@@ -15,20 +15,16 @@ public class Park extends Item implements Serializable{
     private String mHours;
     private double mLat;
     private double mLong;
+    private String mDescription;
+    private String mDeparturePoint;
+    private String mDepartureTime;
+    private int mDuration;
     private int mImageResourceId = NOIMAGE;
-    public static final int NOIMAGE = -1;
+    public int mFullImageResourceId = NOIMAGE;
+    private int mPrice;
+    private String[] mHighlights;
 
-    public Park(String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong) {
-        this.mName = mName;
-        this.mAddress = mAddress;
-        this.mWeb = mWeb;
-        this.mEmail = mEmail;
-        this.mPhone = mPhone;
-        this.mHours = mHours;
-        this.mLat = mLat;
-        this.mLong = mLong;
-        this.mImageResourceId = mImageResourceId;
-    }
+    public static final int NOIMAGE = -1;
 
     public String getmName() {
         return mName;
@@ -62,11 +58,35 @@ public class Park extends Item implements Serializable{
         return mLong;
     }
 
+    public String getmDescription() {
+        return mDescription;
+    }
+
+    public String getmDeparturePoint() {
+        return mDeparturePoint;
+    }
+
+    public String getmDepartureTime() {
+        return mDepartureTime;
+    }
+
+    public int getmDuration() {
+        return mDuration;
+    }
+
     public int getmImageResourceId() {
         return mImageResourceId;
     }
 
-    public boolean hasImage() {
-        return mImageResourceId != NOIMAGE;
+    public int getmFullImageResourceId() {
+        return mFullImageResourceId;
+    }
+
+    public int getmPrice() {
+        return mPrice;
+    }
+
+    public String[] getmHighlights() {
+        return mHighlights;
     }
 }

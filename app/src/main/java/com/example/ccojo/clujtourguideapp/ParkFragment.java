@@ -1,5 +1,6 @@
 package com.example.ccojo.clujtourguideapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,12 +20,14 @@ import java.util.ArrayList;
  */
 
 public class ParkFragment extends Fragment {
+    static ArrayList<Park> parks;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.category_list, container, false);
 
-        final ArrayList<Park> parks = new ArrayList<>();
+        parks = new ArrayList<>();
         //String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong
         parks.add(new Park("Simion Bărnuțiu Central Park", "Cardinal Hossu Iuliu Street", "+40720425741", "http://www.primariaclujnapoca.ro/", "", "Open 24 hours", R.drawable.park_central_thumb, 46.768578, 23.578762));
         parks.add(new Park("Botanical Garden", "42 Republicii Street", "+40264592152", "", "gradina.botanica@ubbcluj.ro", "09:00 - 20:00\nGlass Houses: 09:00 - 18:00", R.drawable.park_botanical_thumb, 46.762585, 23.588517));
@@ -38,13 +41,10 @@ public class ParkFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                String mTitle = parks.get(position).getmName();
-//                String mLat = String.valueOf(parks.get(position).getmLat());
-//                String mLong = String.valueOf(parks.get(position).getmLong());
-//                String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
-//
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
-//                getContext().startActivity(intent);
+                Context context = view.getContext();
+                Intent intent = new Intent(context, ItemDetailActivity.class);
+                intent.putExtra("PARK", parks.get(position));
+                context.startActivity(intent);
             }
         });
 

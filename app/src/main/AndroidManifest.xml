@@ -16,6 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategoryActivity"></activity>
+        <activity
+            android:name=".ItemDetailActivity"
+            android:label="@string/item_detail"
+            android:parentActivityName=".CategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ccojo.clujtourguideapp.CategoryActivity" />
+        </activity>
     </application>
 
 </manifest>
