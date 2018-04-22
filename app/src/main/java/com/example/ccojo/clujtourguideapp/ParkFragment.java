@@ -15,32 +15,34 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * Created by ccojo on 4/21/2018.
+ * Created by ccojo on 4/22/2018.
  */
 
-public class TourFragment extends Fragment {
+public class ParkFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.category_list, container, false);
 
-        final ArrayList<Tour> tours = new ArrayList<>();
-        //SString mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, String description, String departurePoint, String departureTime, int duration, String[] highlights, int mImageResourceId, double mLat, double mLong
-        tours.add(new Tour("", "", "", "", "", "", "", "", "", 0, new String[]{""}, 0, 0.0, 0.0));
-        tours.add(new Tour("", "", "", "", "", "", "", "", "", 0, new String[]{""}, 0, 0.0, 0.0));
-        tours.add(new Tour("", "", "", "", "", "", "", "", "", 0, new String[]{""}, 0, 0.0, 0.0));
-        //tours.add(new Tour("", "", "", "", "", "", "", "", "", 0, new String[]{""}, 0, 0.0, 0.0));
+        final ArrayList<Park> parks = new ArrayList<>();
+        //String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, double mLat, double mLong
+        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
+        parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
+        //parks.add(new Park("", "", "", "", "", "", 0, 0.0, 0.0));
 
-        TourAdapter adapter = new TourAdapter(getContext(), tours);
+        ParkAdapter adapter = new ParkAdapter(getContext(), parks);
         ListView listView = rootView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String mTitle = tours.get(position).getmName();
-                String mLat = String.valueOf(tours.get(position).getmLat());
-                String mLong = String.valueOf(tours.get(position).getmLong());
+                String mTitle = parks.get(position).getmName();
+                String mLat = String.valueOf(parks.get(position).getmLat());
+                String mLong = String.valueOf(parks.get(position).getmLong());
                 String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));

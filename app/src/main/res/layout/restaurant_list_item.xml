@@ -93,7 +93,7 @@
             android:layout_alignParentEnd="true"
             android:textColor="@android:color/white"
             android:autoLink="phone"
-            tools:text="+40753033202"
+            tools:text="+40753033123"
             tools:textColor="@color/colorPrimary"/>
 
     </RelativeLayout>

@@ -42,7 +42,7 @@ public class CategoryAdapter extends FragmentPagerAdapter{
             case 2:
                 return new TourFragment();
             case 3:
-                return new NatureFragment();
+                return new ParkFragment();
             default:
                 return null;
         }

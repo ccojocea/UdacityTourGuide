@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/padding_m"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:id="@+id/tour_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_font_size_l"
+        tools:text="tour Name"
+        tools:textColor="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tour_name"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_s"
+        android:background="@android:color/white"
+        tools:background="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/tour_image"
+        android:layout_below="@id/separator"
+        android:layout_width="100dp"
+        android:layout_height="134dp"
+        android:layout_marginEnd="@dimen/margin_s"
+        tools:src="@drawable/default_image_thumb"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tour_image"
+        android:layout_below="@id/separator"
+        android:textColor="@android:color/white"
+        android:text="@string/address"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tour_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/separator"
+        android:maxEms="12"
+        android:textColor="@android:color/white"
+        tools:text="tour Address"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tour_image"
+        android:layout_below="@id/tour_address"
+        android:textColor="@android:color/white"
+        android:text="@string/visiting_hours"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tour_visiting_hours"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tour_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:maxEms="14"
+        tools:text="Mon-Fri: 12:00 - 23:00\nSat-Sun: 14:00 - 22:00"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tour_image"
+        android:layout_below="@id/tour_visiting_hours"
+        android:textColor="@android:color/white"
+        android:text="@string/web"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tour_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tour_visiting_hours"
+        android:autoLink="web"
+        android:maxEms="14"
+        android:textColor="@android:color/white"
+        android:textAlignment="textEnd"
+        tools:text="www.rea.rea.rea.re.re.re.re.rr.com.ro"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tour_image"
+        android:layout_below="@id/tour_web"
+        android:textColor="@android:color/white"
+        android:text="@string/email"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tour_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tour_web"
+        android:textAlignment="textEnd"
+        android:autoLink="email"
+        android:maxEms="14"
+        android:textColor="@android:color/white"
+        tools:text="awesometour@gmail.com"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tour_image"
+        android:layout_below="@id/tour_mail"
+        android:textColor="@android:color/white"
+        android:text="@string/phone"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tour_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tour_mail"
+        android:autoLink="phone"
+        android:textColor="@android:color/white"
+        tools:text="+40753033123"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/view_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tour_image"
+        android:autoLink="phone"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:text="@string/tour_details"
+        tools:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
