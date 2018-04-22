@@ -27,26 +27,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Museum.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Museum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Park.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Park.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Restaurant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Restaurant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Tour.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Tour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/category_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/category_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/museum_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/museum_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/park_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/park_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/restaurant_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/restaurant_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tour_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tour_list_item.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,8 +89,8 @@
       <file leaf-file-name="ParkFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -173,8 +155,8 @@
       <file leaf-file-name="TourFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="31" column="358" lean-forward="false" selection-start-line="31" selection-start-column="358" selection-end-line="31" selection-end-column="358" />
               <folding />
             </state>
           </provider>
@@ -1941,7 +1923,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryItem.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/park_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/restaurant_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tour_list_item.xml" />
@@ -1959,6 +1940,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Tour.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourFragment.java" />
       </list>
     </option>
@@ -2215,7 +2197,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524397007773" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524398413960" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2263,7 +2245,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524397007773" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524398413960" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2446,7 +2428,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524397007774" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524398413961" />
       </method>
     </configuration>
     <list size="1">
@@ -2838,22 +2820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2892,10 +2858,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ParkFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        <state relative-caret-position="323">
+          <caret line="31" column="358" lean-forward="false" selection-start-line="31" selection-start-column="358" selection-end-line="31" selection-end-column="358" />
           <folding />
         </state>
       </provider>
