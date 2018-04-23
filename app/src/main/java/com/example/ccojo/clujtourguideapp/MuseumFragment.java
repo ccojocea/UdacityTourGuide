@@ -34,7 +34,7 @@ public class MuseumFragment extends Fragment {
         museums.add(new Museum("Astronomical Observatory", "19 Ciresilor Street", "+40264594592", "http://www.ubbcluj.ro/ro/structura/sport/observatorul_astronomic", "mirliviu@yahoo.com", "Friday Evening", R.drawable.museum_astro_thumb, 46.758123, 23.586617));
         museums.add(new Museum("Poarta de su' Feleac", "20 Soporului Street", "+40766529550", "http://poarta.weebly.com/", "ghita_capusan@gmail.com", "Mon-Sun: 09:00 - 18:00", R.drawable.museum_poarta_thumb, 46.753002, 23.662265));
         museums.add(new Museum("The Pharmacy History Collection", "28 Piata Unirii", "+40264597567", "http://www.mnit.ro/colectia-de-istorie-a-farmaciei/", "", "Mon, Tue, Wed, Fri: 10:00 - 16:00\nThursday: 12:00 - 18:00", R.drawable.museum_pharmacy_thumb, 46.771100, 23.589800));
-        //museums.add(new Museum("", "", "", "", "", "", , 0.0, 0.0));
+        //museums.add(new Museum("", "", "", "", "", "", -1, 0.0, 0.0));
 
         MuseumAdapter adapter = new MuseumAdapter(getContext(), museums);
         ListView listView = rootView.findViewById(R.id.listView);

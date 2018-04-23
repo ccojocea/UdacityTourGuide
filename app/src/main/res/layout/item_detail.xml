@@ -187,6 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/item_address"
+        android:textAlignment="textEnd"
         android:maxEms="16"
         android:text="@string/no_hours"
         tools:textColor="@color/colorPrimary" />

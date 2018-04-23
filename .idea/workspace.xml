@@ -20,14 +20,12 @@
     <list default="true" id="24f6c399-33cd-4b6c-bcdc-6b47c2c20c5d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_detail.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -109,8 +107,8 @@
       <file leaf-file-name="ItemDetailActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ItemDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+            <state relative-caret-position="169">
+              <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2779#3051#0" expanded="true" />
@@ -120,21 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CategoryActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CategoryAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state relative-caret-position="236">
+              <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
               <folding>
                 <element signature="e#644#683#0" expanded="true" />
                 <element signature="e#740#779#0" expanded="true" />
@@ -146,18 +144,18 @@
       <file leaf-file-name="MuseumFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="51" column="51" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="51" selection-end-column="51" />
+            <state relative-caret-position="357">
+              <caret line="34" column="79" lean-forward="false" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MuseumAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumAdapter.java">
+      <file leaf-file-name="Museum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Museum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+            <state relative-caret-position="278">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -169,8 +167,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4318">
-              <caret line="254" column="46" lean-forward="false" selection-start-line="254" selection-start-column="46" selection-end-line="254" selection-end-column="46" />
+            <state relative-caret-position="388">
+              <caret line="189" column="38" lean-forward="false" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
               <folding>
                 <element signature="e#1505#1522#0" expanded="true" />
                 <element signature="e#1835#1852#0" expanded="true" />
@@ -190,13 +188,14 @@
                 <element signature="e#6696#6713#0" expanded="true" />
                 <element signature="e#6763#6783#0" expanded="true" />
                 <element signature="e#7151#7175#0" expanded="true" />
-                <element signature="e#7517#7535#0" expanded="true" />
-                <element signature="e#7795#7808#0" expanded="true" />
-                <element signature="e#8177#8193#0" expanded="true" />
-                <element signature="e#8483#8498#0" expanded="true" />
-                <element signature="e#8859#8876#0" expanded="true" />
-                <element signature="e#9168#9183#0" expanded="true" />
-                <element signature="e#9518#9536#0" expanded="true" />
+                <element signature="e#7557#7575#0" expanded="true" />
+                <element signature="e#7835#7848#0" expanded="true" />
+                <element signature="e#8217#8233#0" expanded="true" />
+                <element signature="e#8523#8538#0" expanded="true" />
+                <element signature="e#8899#8916#0" expanded="true" />
+                <element signature="e#9208#9223#0" expanded="true" />
+                <element signature="e#9558#9576#0" expanded="true" />
+                <element signature="e#9757#9774#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -235,6 +234,7 @@
       <find>android:textColor=&quot;@android:color/white&quot;</find>
       <find>android:visibility=&quot;gone&quot;</find>
       <find>depart</find>
+      <find>hours</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1966,7 +1966,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/category_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryItemAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/restaurant_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/museum_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/category_list.xml" />
@@ -1994,9 +1993,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/TourFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ItemDetailFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ItemDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java" />
       </list>
     </option>
   </component>
@@ -2247,7 +2247,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524464033237" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524466414931" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2294,7 +2294,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524464033237" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524466414931" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2455,7 +2455,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524464033238" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524466414931" />
       </method>
     </configuration>
     <list size="1">
@@ -2569,13 +2569,14 @@
             <element signature="e#6696#6713#0" expanded="true" />
             <element signature="e#6763#6783#0" expanded="true" />
             <element signature="e#7151#7175#0" expanded="true" />
-            <element signature="e#7517#7535#0" expanded="true" />
-            <element signature="e#7795#7808#0" expanded="true" />
-            <element signature="e#8177#8193#0" expanded="true" />
-            <element signature="e#8483#8498#0" expanded="true" />
-            <element signature="e#8859#8876#0" expanded="true" />
-            <element signature="e#9168#9183#0" expanded="true" />
-            <element signature="e#9518#9536#0" expanded="true" />
+            <element signature="e#7557#7575#0" expanded="true" />
+            <element signature="e#7835#7848#0" expanded="true" />
+            <element signature="e#8217#8233#0" expanded="true" />
+            <element signature="e#8523#8538#0" expanded="true" />
+            <element signature="e#8899#8916#0" expanded="true" />
+            <element signature="e#9208#9223#0" expanded="true" />
+            <element signature="e#9558#9576#0" expanded="true" />
+            <element signature="e#9757#9774#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2660,16 +2661,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/museum_park_thumb.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Museum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#1248#1249#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/RestaurantAdapter.java">
@@ -2890,60 +2881,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
-          <caret line="254" column="46" lean-forward="false" selection-start-line="254" selection-start-column="46" selection-end-line="254" selection-end-column="46" />
-          <folding>
-            <element signature="e#1505#1522#0" expanded="true" />
-            <element signature="e#1835#1852#0" expanded="true" />
-            <element signature="e#2201#2221#0" expanded="true" />
-            <element signature="e#2640#2663#0" expanded="true" />
-            <element signature="e#3037#3059#0" expanded="true" />
-            <element signature="e#3406#3431#0" expanded="true" />
-            <element signature="e#3844#3865#0" expanded="true" />
-            <element signature="e#4257#4281#0" expanded="true" />
-            <element signature="e#4616#4634#0" expanded="true" />
-            <element signature="e#5022#5048#0" expanded="true" />
-            <element signature="e#5332#5347#0" expanded="true" />
-            <element signature="e#5729#5747#0" expanded="true" />
-            <element signature="e#6038#6055#0" expanded="true" />
-            <element signature="e#6324#6341#0" expanded="true" />
-            <element signature="e#6363#6380#0" expanded="true" />
-            <element signature="e#6696#6713#0" expanded="true" />
-            <element signature="e#6763#6783#0" expanded="true" />
-            <element signature="e#7151#7175#0" expanded="true" />
-            <element signature="e#7517#7535#0" expanded="true" />
-            <element signature="e#7795#7808#0" expanded="true" />
-            <element signature="e#8177#8193#0" expanded="true" />
-            <element signature="e#8483#8498#0" expanded="true" />
-            <element signature="e#8859#8876#0" expanded="true" />
-            <element signature="e#9168#9183#0" expanded="true" />
-            <element signature="e#9518#9536#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ItemDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2779#3051#0" expanded="true" />
-            <element signature="e#3050#3051#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2971,6 +2913,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="e#644#683#0" expanded="true" />
+            <element signature="e#740#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="189" column="38" lean-forward="false" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
+          <folding>
+            <element signature="e#1505#1522#0" expanded="true" />
+            <element signature="e#1835#1852#0" expanded="true" />
+            <element signature="e#2201#2221#0" expanded="true" />
+            <element signature="e#2640#2663#0" expanded="true" />
+            <element signature="e#3037#3059#0" expanded="true" />
+            <element signature="e#3406#3431#0" expanded="true" />
+            <element signature="e#3844#3865#0" expanded="true" />
+            <element signature="e#4257#4281#0" expanded="true" />
+            <element signature="e#4616#4634#0" expanded="true" />
+            <element signature="e#5022#5048#0" expanded="true" />
+            <element signature="e#5332#5347#0" expanded="true" />
+            <element signature="e#5729#5747#0" expanded="true" />
+            <element signature="e#6038#6055#0" expanded="true" />
+            <element signature="e#6324#6341#0" expanded="true" />
+            <element signature="e#6363#6380#0" expanded="true" />
+            <element signature="e#6696#6713#0" expanded="true" />
+            <element signature="e#6763#6783#0" expanded="true" />
+            <element signature="e#7151#7175#0" expanded="true" />
+            <element signature="e#7557#7575#0" expanded="true" />
+            <element signature="e#7835#7848#0" expanded="true" />
+            <element signature="e#8217#8233#0" expanded="true" />
+            <element signature="e#8523#8538#0" expanded="true" />
+            <element signature="e#8899#8916#0" expanded="true" />
+            <element signature="e#9208#9223#0" expanded="true" />
+            <element signature="e#9558#9576#0" expanded="true" />
+            <element signature="e#9757#9774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ItemDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2779#3051#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/ItemDetailFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -2981,30 +2984,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/Museum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="278">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/MuseumFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="51" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="51" selection-end-column="51" />
+        <state relative-caret-position="357">
+          <caret line="34" column="79" lean-forward="false" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ccojo/clujtourguideapp/CategoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-          <folding>
-            <element signature="e#644#683#0" expanded="true" />
-            <element signature="e#740#779#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
