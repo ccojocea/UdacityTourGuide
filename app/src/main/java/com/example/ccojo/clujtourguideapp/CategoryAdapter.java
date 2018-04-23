@@ -22,9 +22,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.category_1);
-        } else if (position == 1) {
             return mContext.getString(R.string.category_2);
+        } else if (position == 1) {
+            return mContext.getString(R.string.category_1);
         } else if (position == 2) {
             return mContext.getString(R.string.category_3);
         } else {
@@ -36,9 +36,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new RestaurantFragment();
-            case 1:
                 return new MuseumFragment();
+            case 1:
+                return new RestaurantFragment();
             case 2:
                 return new TourFragment();
             case 3:
