@@ -61,9 +61,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@id/item_description"
-            android:textAlignment="textEnd"
-            android:ems="18"
+            android:ems="14"
             android:text="@string/no_highlights"
+            android:textAlignment="textEnd"
             tools:text="Item Highlights 1\nItem Highlights 2\nItem Highlights 3"
             tools:textColor="@color/colorPrimary" />
 
@@ -81,8 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@id/item_highlights"
+            android:ems="14"
             android:text="@string/no_depart_point"
-            android:ems="16"
             android:textAlignment="textEnd"
             tools:text="Item Departure Point"
             tools:textColor="@color/colorPrimary" />
@@ -100,9 +100,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:textAlignment="textEnd"
             android:layout_below="@id/item_depart_point"
+            android:ems="14"
             android:text="@string/no_depart_time"
+            android:textAlignment="textEnd"
             tools:text="Item Departure Time"
             tools:textColor="@color/colorPrimary" />
 
@@ -119,9 +120,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:textAlignment="textEnd"
             android:layout_below="@id/item_depart_time"
+            android:ems="14"
             android:text="@string/unknown_duration"
+            android:textAlignment="textEnd"
             tools:textColor="@color/colorPrimary" />
 
         <TextView
@@ -137,9 +139,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:textAlignment="textEnd"
             android:layout_below="@id/item_duration"
+            android:ems="14"
             android:text="@string/no_price"
+            android:textAlignment="textEnd"
             tools:textColor="@color/colorPrimary" />
 
     </RelativeLayout>
@@ -168,7 +171,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@id/separator"
         android:layout_marginTop="@dimen/margin_s"
-        android:maxEms="16"
+        android:maxEms="15"
         android:text="@string/no_address"
         tools:text="item Address item Address item Address item Address item Address item Address item Address "
         tools:textColor="@color/colorPrimary" />
@@ -187,9 +190,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/item_address"
-        android:textAlignment="textEnd"
-        android:maxEms="16"
+        android:maxEms="15"
         android:text="@string/no_hours"
+        android:textAlignment="textEnd"
         tools:textColor="@color/colorPrimary" />
 
     <TextView
@@ -207,7 +210,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@id/item_visiting_hours"
         android:autoLink="web"
-        android:maxEms="16"
+        android:maxEms="15"
         android:text="@string/no_web"
         android:textAlignment="textEnd"
         tools:textColor="@color/colorPrimary" />
@@ -227,7 +230,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@id/item_web"
         android:autoLink="email"
-        android:maxEms="16"
+        android:maxEms="15"
         android:text="@string/no_mail"
         android:textAlignment="textEnd"
         tools:textColor="@color/colorPrimary" />
@@ -251,8 +254,8 @@
         tools:textColor="@color/colorPrimary" />
 
     <View
-        android:layout_below="@id/item_phone"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_m" />
+        android:layout_height="@dimen/margin_m"
+        android:layout_below="@id/item_phone" />
 
 </RelativeLayout>

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by ccojo on 4/22/2018.
  */
 
-public class Item implements Serializable{
+class Item implements Serializable{
     private String mShortName;
     private String mName;
     private String mAddress;
@@ -21,11 +21,11 @@ public class Item implements Serializable{
     private String mDepartureTime;
     private int mDuration;
     private int mImageResourceId = NOIMAGE;
-    public int mFullImageResourceId = NOIMAGE;
+    private int mFullImageResourceId = NOIMAGE;
     private int mPrice;
     private String[] mHighlights;
 
-    public static final int NOIMAGE = -1;
+    private static final int NOIMAGE = -1;
 
     public String getmShortName() {
         return mShortName;

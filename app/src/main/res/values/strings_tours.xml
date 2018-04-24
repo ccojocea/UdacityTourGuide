@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tours info -->
+    <string-array name="tour_departure_times">
+        <item>9:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tour_departure_points">
+        <item>We will pick you up from your hotel, or from your requested location</item>
+        <item>Cluj-Napoca</item>
+        <item>Your centrally located hotel</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tour_descriptions">
+        <item>Delve into the coolest underground theme park in the world and visit the star-shaped Alba Carolina Fortress in a one-day trip from Cluj-Napoca.</item>
+        <item>Discover a land of unspoiled forests, warm hospitality, and ancient family traditions on an overnight tour of Maramures, a region where old Romanian ways of life still thrive. Combine the best of northern Romania’s nature and culture as you visit distinctive hand-carved wooden churches and old cemeteries, pass through pristine woodlands where brown bears roam, and join in local craft and social customs. Try regional cuisine with several included meals, and spend the night in a typical inn for an authentic, immersive experience.</item>
+        <item>Discover step by step the secrets of Cluj-Napoca, proclaimed city of arts and the European Capital of Youth.</item>
+        <item>Servus, and welcome to “Active Weekends”, the starting point for your hiking tours on Transylvanian trails!</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tour_short_names">
+        <item>Turda Salt Mine</item>
+        <item>Maramures Experience</item>
+        <item>City Tour</item>
+        <item>Active Weekends</item>
+        <item>Transylvania Cycling</item>
+    </string-array>
+
+    <string-array name="tour_names">
+        <item>Day-trip to Turda Salt Mine and Alba Carolina Fortress from Cluj-Napoca</item>
+        <item>Maramures 2-Day Cultural Experience</item>
+        <item>Half-day Cluj-Napoca City Tour</item>
+        <item>Active Weekends</item>
+        <item>Transylvania Cycling</item>
+    </string-array>
+
+    <string-array name="tour_addresses">
+        <item>Turda Salt Mine</item>
+        <item>Maramures</item>
+        <item>Cluj-Napoca</item>
+        <item></item>
+        <item>Cluj-Napoca</item>
+    </string-array>
+
+    <string-array name="tour_phones">
+        <item>+40317800236</item>
+        <item>+40317800236</item>
+        <item>+40317800236</item>
+        <item>+40747510825</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tour_webs">
+        <item>https://rolandia.eu/</item>
+        <item>https://rolandia.eu/</item>
+        <item>https://rolandia.eu/</item>
+        <item>http://activeweekends.ro/</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tour_emails">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>contact@activeweekends.ro</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tour_highlights_1">
+        <item>Pickup from a centrally located meeting point</item>
+        <item>Family friendly</item>
+        <item>Day trip(destination A to B)</item>
+        <item>Perfect for all ages and skill level</item>
+        <item>Informative, friendly and professional guide</item>
+        <item>Comprehensive tour of the city</item>
+    </string-array>
+
+    <string-array name="tour_highlights_2">
+        <item>2-day tour of the Maramures region from Cluj-Napoca</item>
+        <item>Learn about the history and traditions of one of Romania\'s best-preserved regions</item>
+        <item>Visit the carved wooden churches of Breb</item>
+        <item>Watch local artisans practice wood carving and other crafts</item>
+        <item>See natural whirlpools and untouched forests</item>
+        <item>Enjoy a breakfast, lunch and dinner of typical regional cuisine</item>
+        <item>Includes overnight accommodation</item>
+    </string-array>
+
+    <string-array name="tour_highlights_3">
+        <item>5-hour walking tour of Cluj-Napoca</item>
+        <item>Discover why the city is known as a capital for academics, technology and culture</item>
+        <item>Admire Baroque architecture in the city center</item>
+        <item>See ancient artifacts at the National History Museum of Transylvania</item>
+        <item>Stroll among sweet-smelling native flowers at the Botanical Gardens</item>
+        <item>Great overview and orientation of the city</item>
+    </string-array>
+
+    <string-array name="tour_highlights_4">
+        <item>One day hikes</item>
+        <item>Two day hikes</item>
+        <item>Multi day hikes</item>
+    </string-array>
+</resources>

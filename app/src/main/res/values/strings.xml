@@ -13,7 +13,6 @@
     <string name="category_2">Museums</string>
     <string name="category_3">Tours</string>
     <string name="category_4">Parks</string>
-
     <string name="address">Address: </string>
     <string name="type">Type: </string>
     <string name="program">Program: </string>
@@ -22,7 +21,6 @@
     <string name="web">Web: </string>
     <string name="email">Email: </string>
     <string name="price">Price: </string>
-    
     <string name="no_web">No web address</string>
     <string name="no_address">Unknown address</string>
     <string name="no_mail">No email address</string>
@@ -33,12 +31,11 @@
     <string name="no_depart_time">Unknown departure time</string>
     <string name="no_depart_point">Unknown departure point</string>
     <string name="no_highlights">It\'s a surprise</string>
-
     <string name="depart_point">Departure point:</string>
     <string name="depart_time">Departure time:</string>
     <string name="duration">Duration:</string>
     <string name="highlights">Highlights:</string>
-
     <string name="tour_details">Touch to view more details about this tour</string>
     <string name="park_details">Touch to view more details about this park</string>
+
 </resources>

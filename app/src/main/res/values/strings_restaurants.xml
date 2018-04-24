@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- restaurants info -->
+    <string-array name="restaurant_names">
+        <item>Indigo</item>
+        <item>Da Pino</item>
+        <item>Tokyo Japanese Restaurant</item>
+        <item>Samsara Foodhouse</item>
+        <item>Cabinet du Vin &amp; Cocotte</item>
+        <item>O\'Peter\'s Irish Pub &amp; Grill</item>
+        <item>A Camponeza</item>
+        <item>Jaxx</item>
+        <item>Sax Speakeasy Wine Bar</item>
+        <item>Matei Corvin</item>
+    </string-array>
+
+    <string-array name="restaurant_addresses">
+        <item>10-12 Piezisa Street</item>
+        <item>8 Universitatii Street</item>
+        <item>5 Gh Marinescu Street</item>
+        <item>5 Stephan Ludwig Roth Street</item>
+        <item>5 Eroilor Blvd</item>
+        <item>4 Goldis Vasile Street</item>
+        <item>2 Emile Zola Street</item>
+        <item>Isac Emil Street</item>
+        <item>1 Piata Muzeului</item>
+        <item>3 Matei Corvin Street</item>
+    </string-array>
+
+    <string-array name="restaurant_phones">
+        <item>+40364142306</item>
+        <item>+40734881010</item>
+        <item>+40759020024</item>
+        <item>+40799073073</item>
+        <item>+40264590200</item>
+        <item>+40726738377</item>
+        <item>+40734047713</item>
+        <item>+40756136953</item>
+        <item>+40736095750</item>
+        <item>+40264597496</item>
+    </string-array>
+
+    <string-array name="restaurant_hours">
+        <item>Mon-Sun: 12:00 &#8211; 22:30</item>
+        <item>Mon-Sun: 8:00 &#8211; 23:00</item>
+        <item>Mon-Sun: 12:00 &#8211; 23:00</item>
+        <item>Mon-Sun: 11:00 &#8211; 23:00</item>
+        <item>Mon-Sun: 12:00 &#8211; 23:00</item>
+        <item>Mon-Sun: 10:00 &#8211; 02:00</item>
+        <item>Mon-Sat: 19:00 &#8211; 23:00</item>
+        <item>Mon-Fri: 08:00 &#8211; 24:00\nSat-Sun: 12:00 &#8211; 24:00</item>
+        <item>Tuesday: 18:00 &#8211; 23:45\nWed-Sat: 18:00 &#8211; 01:00</item>
+        <item>Mon-Sat: 12:00 &#8211; 23:00</item>
+    </string-array>
+
+    <string-array name="restaurant_details_1">
+        <item>Indian</item>
+        <item>Punjab region</item>
+        <item>Tandoori &amp; Curry</item>
+    </string-array>
+
+    <string-array name="restaurant_details_2">
+        <item>Italian</item>
+        <item>Mediterranean</item>
+        <item>European</item>
+    </string-array>
+
+    <string-array name="restaurant_details_3">
+        <item>Japanese</item>
+        <item>Sushi</item>
+        <item>Asian</item>
+    </string-array>
+
+    <string-array name="restaurant_details_4">
+        <item>European</item>
+        <item>International</item>
+        <item>Vegetarian Friendly</item>
+    </string-array>
+
+    <string-array name="restaurant_details_5">
+        <item>International</item>
+        <item>European</item>
+        <item>Vegetarian Friendly</item>
+    </string-array>
+
+    <string-array name="restaurant_details_6">
+        <item>Irish</item>
+        <item>Bar</item>
+        <item>Pub</item>
+    </string-array>
+
+    <string-array name="restaurant_details_7">
+        <item>Seafood</item>
+        <item>Mediterranean</item>
+        <item>Barbecue</item>
+    </string-array>
+
+    <string-array name="restaurant_details_8">
+        <item>American</item>
+        <item>Mexican</item>
+        <item>Bar</item>
+    </string-array>
+
+    <string-array name="restaurant_details_9">
+        <item>Wine Bar</item>
+        <item>European</item>
+    </string-array>
+
+    <string-array name="restaurant_details_10">
+        <item>European</item>
+        <item>Eastern European</item>
+        <item>Central European</item>
+    </string-array>
+</resources>

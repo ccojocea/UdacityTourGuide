@@ -18,7 +18,7 @@ public class Park extends Item implements Serializable{
     private double mLong;
     private int mImageResourceId = NOIMAGE;
     private int mFullImageResourceId = NOIMAGE;
-    public static final int NOIMAGE = -1;
+    private static final int NOIMAGE = -1;
 
     public Park(String shortName, String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, int mImageResourceId, int mFullImageResourceId,double mLat, double mLong) {
         this.mShortName = shortName;

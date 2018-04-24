@@ -12,13 +12,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static android.text.util.Linkify.PHONE_NUMBERS;
-
 /**
  * Created by ccojo on 4/21/2018.
  */
 
-public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
+class RestaurantAdapter extends ArrayAdapter<Restaurant> {
     private static final String TAG = "RestaurantAdapter";
 
     public RestaurantAdapter(@NonNull Context context, @NonNull ArrayList<Restaurant> restaurants) {

@@ -24,18 +24,33 @@ public class RestaurantFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.category_list, container, false);
 
-        final ArrayList<Restaurant> restaurants = new ArrayList<Restaurant>();
+        String[] restaurantNames = getResources().getStringArray(R.array.restaurant_names);
+        String[] restaurantAddresses = getResources().getStringArray(R.array.restaurant_addresses);
+        String[] restaurantPhones = getResources().getStringArray(R.array.restaurant_phones);
+        String[] restaurantHours = getResources().getStringArray(R.array.restaurant_hours);
+        String[] restaurantType1 = getResources().getStringArray(R.array.restaurant_details_1);
+        String[] restaurantType2 = getResources().getStringArray(R.array.restaurant_details_2);
+        String[] restaurantType3 = getResources().getStringArray(R.array.restaurant_details_3);
+        String[] restaurantType4 = getResources().getStringArray(R.array.restaurant_details_4);
+        String[] restaurantType5 = getResources().getStringArray(R.array.restaurant_details_5);
+        String[] restaurantType6 = getResources().getStringArray(R.array.restaurant_details_6);
+        String[] restaurantType7 = getResources().getStringArray(R.array.restaurant_details_7);
+        String[] restaurantType8 = getResources().getStringArray(R.array.restaurant_details_8);
+        String[] restaurantType9 = getResources().getStringArray(R.array.restaurant_details_9);
+        String[] restaurantType10 = getResources().getStringArray(R.array.restaurant_details_10);
+
+        final ArrayList<Restaurant> restaurants = new ArrayList<>();
         //String name, String address, String phone, String[] type, String program, Double mLat, Double mLong
-        restaurants.add(new Restaurant("Indigo", "10-12 Piezisa Street", "+40364142306", new String[]{"Indian", "Punjab region", "Tandoori & Curry"}, "Mon-Sun: 12:00 - 22:30", 46.764392, 23.576002));
-        restaurants.add(new Restaurant("Da Pino", "8 Universitatii Street, 400091", "+40734881010", new String[]{"Italian", "Mediterranean", "European"}, "Mon-Sun: 8:00 - 23:00", 46.768147, 23.590250));
-        restaurants.add(new Restaurant("Tokyo Japanese Restaurant", "5 Gh Marinescu Street", "+40759020024", new String[]{"Japanese", "Sushi", "Asian"}, "Mon-Sun: 12:00 - 23:00", 46.763201, 23.583913));
-        restaurants.add(new Restaurant("Samsara Foodhouse", "5 Stephan Ludwig Roth Street", "+40799073073", new String[]{"European", "International", "Vegetarian Friendly"}, "Mon-Sun: 11:00 - 23:00", 46.775043, 23.586344));
-        restaurants.add(new Restaurant("Cabinet du Vin & Cocotte", "5 Eroilor Blvd", "+40264590200", new String[]{"International", "European", "Vegetarian Friendly"}, "Mon-Sun: 12:00 - 23:00", 46.769817, 23.591758));
-        restaurants.add(new Restaurant("O'Peter's Irish Pub & Grill", "4 Goldis Vasile Street", "+40726738377", new String[]{"Irish", "Bar", "Pub"}, "Mon-Sun: 10:00 - 02:00", 46.771390, 23.587856));
-        restaurants.add(new Restaurant("A Camponeza", "2 Emile Zola Street", "+40734047713", new String[]{"Seafood", "Mediterranean", "Barbecue"}, "Mon-Sat: 19:00 - 23:00", 46.772296, 23.589035));
-        restaurants.add(new Restaurant("Jaxx", "Isac Emil Street", "+40756136953", new String[]{"American", "Mexican", "Bar"}, "Mon-Fri: 08:00 - 24:00\nSat-Sun: 12:00 - 24:00", 46.771363, 23.584608));
-        restaurants.add(new Restaurant("Sax Speakeasy Wine Bar", "1 Piata Muzeului", "+40736095750", new String[]{"Wine Bar", "European"}, "Tuesday: 18:00 - 23:45\nWed-Sat: 18:00 - 01:00", 46.771834, 23.587257));
-        restaurants.add(new Restaurant("Matei Corvin", "3 Matei Corvin Street", "+40264597496", new String[]{"European", "Eastern European", "Central European"}, "Mon-Sat: 12:00 - 23:00", 46.771001, 23.587780));
+        restaurants.add(new Restaurant(restaurantNames[0], restaurantAddresses[0], restaurantPhones[0], restaurantType1, restaurantHours[0], 46.764392, 23.576002));
+        restaurants.add(new Restaurant(restaurantNames[1], restaurantAddresses[1], restaurantPhones[1], restaurantType2, restaurantHours[1], 46.768147, 23.590250));
+        restaurants.add(new Restaurant(restaurantNames[2], restaurantAddresses[2], restaurantPhones[2], restaurantType3, restaurantHours[2], 46.763201, 23.583913));
+        restaurants.add(new Restaurant(restaurantNames[3], restaurantAddresses[3], restaurantPhones[3], restaurantType4, restaurantHours[3], 46.775043, 23.586344));
+        restaurants.add(new Restaurant(restaurantNames[4], restaurantAddresses[4], restaurantPhones[4], restaurantType5, restaurantHours[4], 46.769817, 23.591758));
+        restaurants.add(new Restaurant(restaurantNames[5], restaurantAddresses[5], restaurantPhones[5], restaurantType6, restaurantHours[5], 46.771390, 23.587856));
+        restaurants.add(new Restaurant(restaurantNames[6], restaurantAddresses[6], restaurantPhones[6], restaurantType7, restaurantHours[6], 46.772296, 23.589035));
+        restaurants.add(new Restaurant(restaurantNames[7], restaurantAddresses[7], restaurantPhones[7], restaurantType8, restaurantHours[7], 46.771363, 23.584608));
+        restaurants.add(new Restaurant(restaurantNames[8], restaurantAddresses[8], restaurantPhones[8], restaurantType9, restaurantHours[8], 46.771834, 23.587257));
+        restaurants.add(new Restaurant(restaurantNames[9], restaurantAddresses[9], restaurantPhones[9], restaurantType10, restaurantHours[9], 46.771001, 23.587780));
 
         RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants);
         ListView listView = rootView.findViewById(R.id.listView);

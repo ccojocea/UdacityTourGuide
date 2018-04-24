@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- parks info -->
+    <string-array name="park_short_names">
+        <item>Central Park</item>
+        <item>Botanical Garden</item>
+        <item>Turda Gorge</item>
+    </string-array>
+
+    <string-array name="park_names">
+        <item>Simion Bărnuțiu Central Park</item>
+        <item>Alexandru Borza Botanical Garden</item>
+        <item>Turda Gorge National Reserve</item>
+    </string-array>
+
+    <string-array name="park_addresses">
+        <item>Cardinal Hossu Iuliu Street</item>
+        <item>42 Republicii Street</item>
+        <item>DJ 107l - 6 Km west of Turda</item>
+    </string-array>
+
+    <string-array name="park_hours">
+        <item>Open 24 hours</item>
+        <item>09:00 &#8211; 20:00\nGlass Houses: 09:00 &#8211; 18:00</item>
+        <item>Mon-Sun: 09:00 &#8211; 20:00</item>
+    </string-array>
+
+    <string-array name="park_phones">
+        <item>+40720425741</item>
+        <item>+40264592152</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="park_webs">
+        <item>http://www.primariaclujnapoca.ro/</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="park_emails">
+        <item></item>
+        <item>gradina.botanica@ubbcluj.ro</item>
+        <item></item>
+    </string-array>
+</resources>

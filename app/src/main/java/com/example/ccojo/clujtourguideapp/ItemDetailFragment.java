@@ -45,7 +45,7 @@ public class ItemDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
-        appBarLayout = (CollapsingToolbarLayout) getActivity().findViewById(R.id.toolbar_layout);
+        appBarLayout = getActivity().findViewById(R.id.toolbar_layout);
 
         if (appBarLayout != null) {
             appBarLayout.setTitle(mItem.getmShortName());

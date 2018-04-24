@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -26,15 +25,22 @@ public class MuseumFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.category_list, container, false);
 
+        String[] museumNames = getResources().getStringArray(R.array.museum_names);
+        String[] museumAddresses = getResources().getStringArray(R.array.museum_addresses);
+        String[] museumPhones = getResources().getStringArray(R.array.museum_phones);
+        String[] museumWebs = getResources().getStringArray(R.array.museum_webs);
+        String[] museumEmails = getResources().getStringArray(R.array.museum_emails);
+        String[] museumHours = getResources().getStringArray(R.array.museum_hours);
+
         final ArrayList<Museum> museums = new ArrayList<>();
         //String name, String address, String phone, String web, String email, String mVisitingHours, int image, double lat, double lon
-        museums.add(new Museum("Ethnographic Museum of Transylvania", "21 Memorandumului Street", "+40264592344", "http://www.muzeul-etnografic.ro/en", "contact@muzeul-etnografic.ro", "Wed-Sun: 10:00 - 18:00", R.drawable.museum_transylvanian_thumb, 46.769537, 23.586629));
-        museums.add(new Museum("Ethnographic Park Romulus Vuia", "Ethnographic Museum Alley", "+40264592344", "http://www.muzeul-etnografic.ro/en", "contact@muzeul-etnografic.ro", "Wed-Sun: 10:00 - 18:00", R.drawable.museum_park_thumb, 46.778325, 23.553656));
-        museums.add(new Museum("Bánffy Palace Art Museum", "30 Piata Unirii", "+40753066791", "https://www.macluj.ro", "info.muzeu@macluj.ro", "Wed-Sun: 10:00 - 17:00", R.drawable.museum_art_thumb, 46.770914, 23.590900));
-        museums.add(new Museum("Astronomical Observatory", "19 Ciresilor Street", "+40264594592", "http://www.ubbcluj.ro/ro/structura/sport/observatorul_astronomic", "mirliviu@yahoo.com", "Friday Evening", R.drawable.museum_astro_thumb, 46.758123, 23.586617));
-        museums.add(new Museum("Poarta de su' Feleac", "20 Soporului Street", "+40766529550", "http://poarta.weebly.com/", "ghita_capusan@gmail.com", "Mon-Sun: 09:00 - 18:00", R.drawable.museum_poarta_thumb, 46.753002, 23.662265));
-        museums.add(new Museum("The Pharmacy History Collection", "28 Piata Unirii", "+40264597567", "http://www.mnit.ro/colectia-de-istorie-a-farmaciei/", "", "Mon, Tue, Wed, Fri: 10:00 - 16:00\nThursday: 12:00 - 18:00", R.drawable.museum_pharmacy_thumb, 46.771100, 23.589800));
         //museums.add(new Museum("", "", "", "", "", "", -1, 0.0, 0.0));
+        museums.add(new Museum(museumNames[0], museumAddresses[0], museumPhones[0], museumWebs[0], museumEmails[0], museumHours[0], R.drawable.museum_transylvanian_thumb, 46.769537, 23.586629));
+        museums.add(new Museum(museumNames[1], museumAddresses[1], museumPhones[1], museumWebs[1], museumEmails[1], museumHours[1], R.drawable.museum_park_thumb, 46.778325, 23.553656));
+        museums.add(new Museum(museumNames[2], museumAddresses[2], museumPhones[2], museumWebs[2], museumEmails[2], museumHours[2], R.drawable.museum_art_thumb, 46.770914, 23.590900));
+        museums.add(new Museum(museumNames[3], museumAddresses[3], museumPhones[3], museumWebs[3], museumEmails[3], museumHours[3], R.drawable.museum_astro_thumb, 46.758123, 23.586617));
+        museums.add(new Museum(museumNames[4], museumAddresses[4], museumPhones[4], museumWebs[4], museumEmails[4], museumHours[4], R.drawable.museum_poarta_thumb, 46.753002, 23.662265));
+        museums.add(new Museum(museumNames[5], museumAddresses[5], museumPhones[5], museumWebs[5], museumEmails[5], museumHours[5], R.drawable.museum_pharmacy_thumb, 46.771100, 23.589800));
 
         MuseumAdapter adapter = new MuseumAdapter(getContext(), museums);
         ListView listView = rootView.findViewById(R.id.listView);

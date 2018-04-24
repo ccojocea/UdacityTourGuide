@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- museums info -->
+    <string-array name="museum_hours">
+        <item>Wed-Sun: 10:00 &#8211; 18:00</item>
+        <item>Wed-Sun: 10:00 &#8211; 18:00</item>
+        <item>Wed-Sun: 10:00 &#8211; 17:00</item>
+        <item>Friday Evening</item>
+        <item>Mon-Sun: 09:00 &#8211; 18:00</item>
+        <item>Mon, Tue, Wed, Fri: 10:00 &#8211; 16:00\nThursday: 12:00 &#8211; 18:00</item>
+    </string-array>
+
+    <string-array name="museum_names">
+        <item>Ethnographic Museum of Transylvania</item>
+        <item>Ethnographic Park Romulus Vuia</item>
+        <item>Bánffy Palace Art Museum</item>
+        <item>Astronomical Observatory</item>
+        <item>Poarta de su\' Feleac</item>
+        <item>The Pharmacy History Collection</item>
+    </string-array>
+
+    <string-array name="museum_addresses">
+        <item>21 Memorandumului Street</item>
+        <item>Ethnographic Museum Alley</item>
+        <item>30 Piata Unirii</item>
+        <item>19 Ciresilor Street</item>
+        <item>20 Soporului Street</item>
+        <item>28 Piata Unirii</item>
+    </string-array>
+
+    <string-array name="museum_phones">
+        <item>+40264592344</item>
+        <item>+40264592344</item>
+        <item>+40753066791</item>
+        <item>+40264594592</item>
+        <item>+40766529550</item>
+        <item>+40264597567</item>
+    </string-array>
+
+    <string-array name="museum_webs">
+        <item>http://www.muzeul-etnografic.ro/en</item>
+        <item>http://www.muzeul-etnografic.ro/en</item>
+        <item>https://www.macluj.ro</item>
+        <item>http://www.ubbcluj.ro/ro/structura/sport/observatorul_astronomic</item>
+        <item>http://poarta.weebly.com/</item>
+        <item>http://www.mnit.ro/colectia-de-istorie-a-farmaciei/</item>
+    </string-array>
+
+    <string-array name="museum_emails">
+        <item>contact@muzeul-etnografic.ro</item>
+        <item>contact@muzeul-etnografic.ro</item>
+        <item>info.muzeu@macluj.ro</item>
+        <item>mirliviu@yahoo.com</item>
+        <item>ghita_capusan@gmail.com</item>
+        <item></item>
+    </string-array>
+
+</resources>

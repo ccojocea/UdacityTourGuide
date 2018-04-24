@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by ccojo on 4/21/2018.
  */
 
-public class CategoryAdapter extends FragmentPagerAdapter {
+class CategoryAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
     public CategoryAdapter(Context context, FragmentManager fm) {

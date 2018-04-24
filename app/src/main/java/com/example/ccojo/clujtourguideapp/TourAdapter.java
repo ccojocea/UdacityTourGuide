@@ -18,7 +18,7 @@ import java.util.Locale;
  * Created by ccojo on 4/22/2018.
  */
 
-public class TourAdapter extends ArrayAdapter<Tour> {
+class TourAdapter extends ArrayAdapter<Tour> {
     public TourAdapter(@NonNull Context context, @NonNull ArrayList<Tour> tours) {
         super(context, 0, tours);
     }

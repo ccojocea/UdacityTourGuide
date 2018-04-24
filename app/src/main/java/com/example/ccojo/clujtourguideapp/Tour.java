@@ -21,7 +21,7 @@ public class Tour extends Item implements Serializable{
     private String mDepartureTime;
     private int mDuration;
     private int mImageResourceId = NOIMAGE;
-    public int mFullImageResourceId = NOIMAGE;
+    private int mFullImageResourceId = NOIMAGE;
     private int mPrice;
     private String[] mHighlights;
 

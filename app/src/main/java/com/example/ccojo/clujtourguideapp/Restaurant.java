@@ -4,7 +4,7 @@ package com.example.ccojo.clujtourguideapp;
  * Created by ccojo on 4/21/2018.
  */
 
-public class Restaurant {
+class Restaurant {
     private String mName;
     private String mAddress;
     private String mPhone;

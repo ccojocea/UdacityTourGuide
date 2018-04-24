@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/21/2018.
  */
 
-public class MuseumAdapter extends ArrayAdapter<Museum> {
+class MuseumAdapter extends ArrayAdapter<Museum> {
 
     private static final String TAG = "MuseumAdapter";
 

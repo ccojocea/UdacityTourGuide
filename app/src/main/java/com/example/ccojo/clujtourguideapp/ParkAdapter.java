@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/22/2018.
  */
 
-public class ParkAdapter extends ArrayAdapter<Park> {
+class ParkAdapter extends ArrayAdapter<Park> {
 
     public ParkAdapter(@NonNull Context context, @NonNull ArrayList<Park> parks) {
         super(context, 0, parks);

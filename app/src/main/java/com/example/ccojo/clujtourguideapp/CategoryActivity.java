@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class CategoryActivity extends AppCompatActivity {
-    TabLayout tabLayout;
-    ViewPager viewPager;
-    CategoryAdapter categoryAdapter;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private CategoryAdapter categoryAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

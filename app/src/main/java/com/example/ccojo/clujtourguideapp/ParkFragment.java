@@ -2,7 +2,6 @@ package com.example.ccojo.clujtourguideapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -20,18 +19,24 @@ import java.util.ArrayList;
  */
 
 public class ParkFragment extends Fragment {
-    static ArrayList<Park> parks;
+    private static ArrayList<Park> parks;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.category_list, container, false);
 
+        String[] parkShortNames = getResources().getStringArray(R.array.park_short_names);
+        String[] parkNames = getResources().getStringArray(R.array.park_names);
+        String[] parkAddresses = getResources().getStringArray(R.array.park_addresses);
+        String[] parkPhones = getResources().getStringArray(R.array.park_phones);
+        String[] parkWebs = getResources().getStringArray(R.array.park_webs);
+        String[] parkEmails = getResources().getStringArray(R.array.park_emails);
+        String[] parkHours = getResources().getStringArray(R.array.park_hours);
         parks = new ArrayList<>();
-        parks.add(new Park("Central Park", "Simion Bărnuțiu Central Park", "Cardinal Hossu Iuliu Street", "+40720425741", "http://www.primariaclujnapoca.ro/", "", "Open 24 hours", R.drawable.park_central_thumb, R.drawable.park_central,46.768578, 23.578762));
-        parks.add(new Park("Botanical Garden", "Alexandru Borza Botanical Garden", "42 Republicii Street", "+40264592152", "", "gradina.botanica@ubbcluj.ro", "09:00 - 20:00\nGlass Houses: 09:00 - 18:00", R.drawable.park_botanical_thumb, R.drawable.park_botanical, 46.762585, 23.588517));
-        parks.add(new Park("Turda Gorge", "Turda Gorge National Reserve", "DJ 107l - 6 Km west of Turda", "", "", "", "Mon-Sun: 09:00 - 20:00", R.drawable.park_turda_thumb, R.drawable.park_turda, 46.561955, 23.689140));
-        //parks.add(new Park("", "", "", "", "", "", "", Park.NOIMAGE, Park.NOIMAGE, 0.0, 0.0));
+        parks.add(new Park(parkShortNames[0], parkNames[0], parkAddresses[0], parkPhones[0], parkWebs[0], parkEmails[0], parkHours[0], R.drawable.park_central_thumb, R.drawable.park_central,46.768578, 23.578762));
+        parks.add(new Park(parkShortNames[1], parkNames[1], parkAddresses[1], parkPhones[1], parkWebs[1], parkEmails[1], parkHours[1], R.drawable.park_botanical_thumb, R.drawable.park_botanical, 46.762585, 23.588517));
+        parks.add(new Park(parkShortNames[2], parkNames[2], parkAddresses[2], parkPhones[2], parkWebs[2], parkEmails[2], parkHours[2], R.drawable.park_turda_thumb, R.drawable.park_turda, 46.561955, 23.689140));
 
         ParkAdapter adapter = new ParkAdapter(getContext(), parks);
         ListView listView = rootView.findViewById(R.id.listView);
