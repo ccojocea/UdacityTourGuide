@@ -4,6 +4,7 @@ package com.example.ccojo.clujtourguideapp;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings({"CanBeFinal", "DefaultFileTemplate"})
 class Museum {
     private String mName;
     private String mAddress;
@@ -28,6 +29,7 @@ class Museum {
         this.mLong = lon;
     }
 
+    @SuppressWarnings("unused")
     public Museum(String name, String address, String phone, String web, String email, String mVisitingHours, double lat, double lon) {
         this.mName = name;
         this.mAddress = address;

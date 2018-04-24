@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_s"
         android:adjustViewBounds="true"
-        tools:src="@drawable/tour_cluj" />
+        tools:src="@drawable/tour_cluj"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/item_name_textview"

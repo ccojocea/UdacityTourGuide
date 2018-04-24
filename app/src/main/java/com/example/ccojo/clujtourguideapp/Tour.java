@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by ccojo on 4/22/2018.
  */
 
+@SuppressWarnings({"CanBeFinal", "DefaultFileTemplate"})
 public class Tour extends Item implements Serializable{
     private String mShortName;
     private String mName;
@@ -27,7 +28,7 @@ public class Tour extends Item implements Serializable{
 
     public static final int NOIMAGE = -1;
 
-    public Tour(String shortName, String mName, String mAddress, String mPhone, String mWeb, String mEmail, String mHours, String description, String departurePoint, String departureTime, int duration, String[] highlights, int price, int mImageResourceId, int mFullImageResourceId, double mLat, double mLong) {
+    public Tour(String shortName, String mName, String mAddress, String mPhone, String mWeb, String mEmail, @SuppressWarnings("SameParameterValue") String mHours, String description, String departurePoint, String departureTime, int duration, String[] highlights, int price, int mImageResourceId, int mFullImageResourceId, double mLat, double mLong) {
         this.mShortName = shortName;
         this.mName = mName;
         this.mAddress = mAddress;

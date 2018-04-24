@@ -18,6 +18,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class RestaurantFragment extends Fragment {
     @Nullable
     @Override
@@ -52,7 +53,7 @@ public class RestaurantFragment extends Fragment {
         restaurants.add(new Restaurant(restaurantNames[8], restaurantAddresses[8], restaurantPhones[8], restaurantType9, restaurantHours[8], 46.771834, 23.587257));
         restaurants.add(new Restaurant(restaurantNames[9], restaurantAddresses[9], restaurantPhones[9], restaurantType10, restaurantHours[9], 46.771001, 23.587780));
 
-        RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants);
+        @SuppressWarnings("ConstantConditions") RestaurantAdapter adapter = new RestaurantAdapter(getActivity(), restaurants);
         ListView listView = rootView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
@@ -65,6 +66,7 @@ public class RestaurantFragment extends Fragment {
                 String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
+                //noinspection ConstantConditions
                 getContext().startActivity(intent);
             }
         });

@@ -18,6 +18,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class TourFragment extends Fragment {
     private static ArrayList<Tour> tours;
 
@@ -49,7 +50,7 @@ public class TourFragment extends Fragment {
         tours.add(new Tour(tourShortNames[3], tourNames[3], tourAddresses[3], tourPhones[3], tourWebs[3], tourEmails[3], "", tourDescriptions[3], tourDepPoints[3], tourDepTimes[3], 4, tourHighlights4, -1, R.drawable.tour_active_weekends_thumb, Tour.NOIMAGE, 0.0, 0.0));
         tours.add(new Tour(tourShortNames[4], tourNames[4], tourAddresses[4], tourPhones[4], tourWebs[4], tourEmails[4], "", tourDescriptions[4], tourDepPoints[4], tourDepTimes[4], 3, null, -1, Tour.NOIMAGE, Tour.NOIMAGE, 0.0, 0.0));
 
-        TourAdapter adapter = new TourAdapter(getContext(), tours);
+        @SuppressWarnings("ConstantConditions") TourAdapter adapter = new TourAdapter(getContext(), tours);
         ListView listView = rootView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 

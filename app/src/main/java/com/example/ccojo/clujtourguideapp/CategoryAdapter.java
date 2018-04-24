@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings({"CanBeFinal", "DefaultFileTemplate"})
 class CategoryAdapter extends FragmentPagerAdapter {
     private Context mContext;
 

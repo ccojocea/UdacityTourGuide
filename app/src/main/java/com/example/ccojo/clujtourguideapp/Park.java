@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by ccojo on 4/22/2018.
  */
 
+@SuppressWarnings({"CanBeFinal", "DefaultFileTemplate"})
 public class Park extends Item implements Serializable{
     private String mShortName;
     private String mName;

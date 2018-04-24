@@ -19,6 +19,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class MuseumFragment extends Fragment {
     @Nullable
     @Override
@@ -42,7 +43,7 @@ public class MuseumFragment extends Fragment {
         museums.add(new Museum(museumNames[4], museumAddresses[4], museumPhones[4], museumWebs[4], museumEmails[4], museumHours[4], R.drawable.museum_poarta_thumb, 46.753002, 23.662265));
         museums.add(new Museum(museumNames[5], museumAddresses[5], museumPhones[5], museumWebs[5], museumEmails[5], museumHours[5], R.drawable.museum_pharmacy_thumb, 46.771100, 23.589800));
 
-        MuseumAdapter adapter = new MuseumAdapter(getContext(), museums);
+        @SuppressWarnings("ConstantConditions") MuseumAdapter adapter = new MuseumAdapter(getContext(), museums);
         ListView listView = rootView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 

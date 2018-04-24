@@ -45,7 +45,8 @@
             android:textAlignment="textEnd"
             android:textColor="@android:color/white"
             tools:text="Indian, Chinese, Japanese, European"
-            tools:textColor="@color/colorPrimary" />
+            tools:textColor="@color/colorPrimary"
+            tools:ignore="RelativeOverlap" />
 
     </RelativeLayout>
 
@@ -70,7 +71,8 @@
             android:textAlignment="textEnd"
             android:textColor="@android:color/white"
             tools:text="Restaurant Address"
-            tools:textColor="@color/colorPrimary" />
+            tools:textColor="@color/colorPrimary"
+            tools:ignore="RelativeOverlap" />
 
     </RelativeLayout>
 
@@ -94,7 +96,8 @@
             android:autoLink="phone"
             android:textColor="@android:color/white"
             tools:text="+40753033123"
-            tools:textColor="@color/colorPrimary" />
+            tools:textColor="@color/colorPrimary"
+            tools:ignore="RelativeOverlap" />
 
     </RelativeLayout>
 
@@ -118,7 +121,8 @@
             android:maxEms="15"
             android:textColor="@android:color/white"
             tools:text="Mon-Fri: 12:00 - 23:00\nSat-Sun: 14:00 - 22:00"
-            tools:textColor="@color/colorPrimary" />
+            tools:textColor="@color/colorPrimary"
+            tools:ignore="RelativeOverlap" />
 
     </RelativeLayout>
 

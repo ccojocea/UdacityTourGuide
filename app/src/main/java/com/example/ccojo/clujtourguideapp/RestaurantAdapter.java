@@ -3,7 +3,6 @@ package com.example.ccojo.clujtourguideapp;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +15,8 @@ import java.util.ArrayList;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 class RestaurantAdapter extends ArrayAdapter<Restaurant> {
-    private static final String TAG = "RestaurantAdapter";
 
     public RestaurantAdapter(@NonNull Context context, @NonNull ArrayList<Restaurant> restaurants) {
         super(context, 0, restaurants);
@@ -38,11 +37,9 @@ class RestaurantAdapter extends ArrayAdapter<Restaurant> {
         TextView typeTV = convertView.findViewById(R.id.restaurant_type);
         TextView programTV = convertView.findViewById(R.id.restaurant_program);
 
-        nameTV.setText(currentRestaurant.getmName());
-        addressTV.setText(currentRestaurant.getmAddress());
-        phoneTV.setText(currentRestaurant.getmPhone());
-        Log.d(TAG, "getPhone: " + currentRestaurant.getmPhone());
-        //phoneTV.setAutoLinkMask(PHONE_NUMBERS);
+        nameTV.setText(currentRestaurant != null ? currentRestaurant.getmName() : getContext().getString(R.string.unknown_name));
+        addressTV.setText(currentRestaurant != null ? currentRestaurant.getmAddress() : getContext().getString(R.string.no_address));
+        phoneTV.setText(currentRestaurant != null ? currentRestaurant.getmPhone() : getContext().getString(R.string.no_phone));
         StringBuilder type = new StringBuilder();
         for (String str : currentRestaurant.getmType()) {
             if (type.toString().equals("")) {

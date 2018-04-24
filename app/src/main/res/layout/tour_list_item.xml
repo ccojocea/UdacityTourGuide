@@ -31,7 +31,8 @@
         android:layout_height="134dp"
         android:layout_below="@id/separator"
         android:layout_marginEnd="@dimen/margin_s"
-        tools:src="@drawable/default_image_thumb" />
+        tools:src="@drawable/default_image_thumb"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -31,7 +31,8 @@
         android:layout_height="134dp"
         android:layout_below="@id/separator"
         android:layout_marginEnd="@dimen/margin_s"
-        tools:src="@drawable/museum_art_thumb" />
+        tools:src="@drawable/museum_art_thumb"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -114,7 +115,7 @@
         android:maxEms="13"
         android:textAlignment="textEnd"
         android:textColor="@android:color/white"
-        tools:text="awesomemuseum@gmail.com"
+        android:text="@string/no_mail"
         tools:textColor="@color/colorPrimary" />
 
     <TextView

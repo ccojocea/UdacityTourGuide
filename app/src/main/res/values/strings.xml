@@ -36,4 +36,5 @@
     <string name="tour_details">Touch to view more details about this tour</string>
     <string name="park_details">Touch to view more details about this park</string>
     <string name="hours">hours</string>
+    <string name="unknown_name">Unknown name</string>
 </resources>

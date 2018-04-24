@@ -4,6 +4,7 @@ package com.example.ccojo.clujtourguideapp;
  * Created by ccojo on 4/21/2018.
  */
 
+@SuppressWarnings({"CanBeFinal", "DefaultFileTemplate"})
 class Restaurant {
     private String mName;
     private String mAddress;

@@ -57,6 +57,7 @@ public class ItemDetailActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().add(R.id.item_detail_container, fragment).commit();
         }
 
+        //noinspection ConstantConditions
         if(getIntent().getExtras().containsKey("TOUR")){
             mItem = (Tour) getIntent().getExtras().getSerializable("TOUR");
         }

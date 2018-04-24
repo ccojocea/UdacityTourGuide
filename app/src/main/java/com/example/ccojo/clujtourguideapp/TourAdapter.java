@@ -18,6 +18,7 @@ import java.util.Locale;
  * Created by ccojo on 4/22/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 class TourAdapter extends ArrayAdapter<Tour> {
     public TourAdapter(@NonNull Context context, @NonNull ArrayList<Tour> tours) {
         super(context, 0, tours);
@@ -41,7 +42,7 @@ class TourAdapter extends ArrayAdapter<Tour> {
         ImageView imgIV = convertView.findViewById(R.id.tour_image);
         TextView priceTV = convertView.findViewById(R.id.tour_price);
 
-        nameTV.setText(currentTour.getmName());
+        nameTV.setText(currentTour != null ? currentTour.getmName() : null);
 
         if(!currentTour.getmAddress().equals("")){
             addressTV.setText(currentTour.getmAddress());

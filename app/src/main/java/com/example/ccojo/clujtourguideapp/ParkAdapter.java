@@ -16,6 +16,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/22/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 class ParkAdapter extends ArrayAdapter<Park> {
 
     public ParkAdapter(@NonNull Context context, @NonNull ArrayList<Park> parks) {
@@ -39,8 +40,8 @@ class ParkAdapter extends ArrayAdapter<Park> {
         TextView visitingTV = convertView.findViewById(R.id.park_visiting_hours);
         ImageView imgIV = convertView.findViewById(R.id.park_image);
 
-        nameTV.setText(currentPark.getmName());
-        addressTV.setText(currentPark.getmAddress());
+        nameTV.setText(currentPark != null ? currentPark.getmName() : getContext().getString(R.string.unknown_name));
+        addressTV.setText(currentPark != null ? currentPark.getmAddress() : getContext().getString(R.string.no_address));
         if (!currentPark.getmPhone().equals("")) {
             phoneTV.setText(currentPark.getmPhone());
         } else {

@@ -1,5 +1,6 @@
 package com.example.ccojo.clujtourguideapp;
 
+import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,7 +20,6 @@ import java.util.Locale;
  */
 public class ItemDetailFragment extends Fragment {
     private Item mItem;
-    private CollapsingToolbarLayout appBarLayout;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -32,6 +32,7 @@ public class ItemDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //noinspection ConstantConditions
         if(getArguments().containsKey("PARK")){
             mItem = (Park) getArguments().getSerializable("PARK");
         }
@@ -41,11 +42,12 @@ public class ItemDetailFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
-        appBarLayout = getActivity().findViewById(R.id.toolbar_layout);
+        //noinspection ConstantConditions
+        CollapsingToolbarLayout appBarLayout = getActivity().findViewById(R.id.toolbar_layout);
 
         if (appBarLayout != null) {
             appBarLayout.setTitle(mItem.getmShortName());

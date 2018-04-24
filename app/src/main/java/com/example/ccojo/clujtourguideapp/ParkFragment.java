@@ -18,6 +18,7 @@ import java.util.ArrayList;
  * Created by ccojo on 4/22/2018.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class ParkFragment extends Fragment {
     private static ArrayList<Park> parks;
 
@@ -38,7 +39,7 @@ public class ParkFragment extends Fragment {
         parks.add(new Park(parkShortNames[1], parkNames[1], parkAddresses[1], parkPhones[1], parkWebs[1], parkEmails[1], parkHours[1], R.drawable.park_botanical_thumb, R.drawable.park_botanical, 46.762585, 23.588517));
         parks.add(new Park(parkShortNames[2], parkNames[2], parkAddresses[2], parkPhones[2], parkWebs[2], parkEmails[2], parkHours[2], R.drawable.park_turda_thumb, R.drawable.park_turda, 46.561955, 23.689140));
 
-        ParkAdapter adapter = new ParkAdapter(getContext(), parks);
+        @SuppressWarnings("ConstantConditions") ParkAdapter adapter = new ParkAdapter(getContext(), parks);
         ListView listView = rootView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
