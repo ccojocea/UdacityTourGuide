@@ -1,7 +1,5 @@
 <resources>
     <string name="item_detail">Item detail</string>
-    <string name="park_detail">Park details</string>
-    <string name="tour_detail">Tour details</string>
 
     <string name="app_name">Cluj-Napoca Tour Guide App</string>
     <string name="cluj_city">Cluj-Napoca, Romania</string>
@@ -37,5 +35,5 @@
     <string name="highlights">Highlights:</string>
     <string name="tour_details">Touch to view more details about this tour</string>
     <string name="park_details">Touch to view more details about this park</string>
-
+    <string name="hours">hours</string>
 </resources>

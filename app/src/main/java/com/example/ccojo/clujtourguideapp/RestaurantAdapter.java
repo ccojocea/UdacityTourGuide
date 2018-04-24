@@ -43,15 +43,15 @@ class RestaurantAdapter extends ArrayAdapter<Restaurant> {
         phoneTV.setText(currentRestaurant.getmPhone());
         Log.d(TAG, "getPhone: " + currentRestaurant.getmPhone());
         //phoneTV.setAutoLinkMask(PHONE_NUMBERS);
-        String type = "";
+        StringBuilder type = new StringBuilder();
         for (String str : currentRestaurant.getmType()) {
-            if (type.equals("")) {
-                type += str;
+            if (type.toString().equals("")) {
+                type.append(str);
             } else {
-                type += ", " + str;
+                type.append(", ").append(str);
             }
         }
-        typeTV.setText(type);
+        typeTV.setText(type.toString());
         programTV.setText(currentRestaurant.getmProgram());
 
         return convertView;

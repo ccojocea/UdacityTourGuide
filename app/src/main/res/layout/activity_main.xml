@@ -25,7 +25,6 @@
             app:srcCompat="@drawable/cluj_overview" />
 
         <TextView
-            android:id="@+id/cluj_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"

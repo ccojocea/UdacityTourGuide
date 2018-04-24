@@ -75,7 +75,8 @@ class TourAdapter extends ArrayAdapter<Tour> {
         }
         //TODO: REFINE THIS FOR CURRENCY SYMBOL AND CONVERSION
         if (currentTour.getmPrice() != -1) {
-            priceTV.setText(currentTour.getmPrice() + " " + Currency.getInstance(Locale.getDefault()).getSymbol());
+            String s = currentTour.getmPrice() + " " + Currency.getInstance(Locale.getDefault()).getSymbol();
+            priceTV.setText(s);
         } else {
             priceTV.setText(getContext().getString(R.string.no_price));
         }

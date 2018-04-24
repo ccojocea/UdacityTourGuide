@@ -79,7 +79,8 @@ public class ItemDetailFragment extends Fragment {
                     descriptionTV.setText(mItem.getmDescription());
                 }
                 if(mItem.getmPrice() != -1){
-                    ((TextView) rootView.findViewById(R.id.item_price)).setText(String.valueOf(mItem.getmPrice()) + " " + Currency.getInstance(Locale.getDefault()).getSymbol());
+                    String s = String.valueOf(mItem.getmPrice()) + " " + Currency.getInstance(Locale.getDefault()).getSymbol();
+                    ((TextView) rootView.findViewById(R.id.item_price)).setText(s);
                 }
                 if(!mItem.getmDeparturePoint().equals("")){
                     ((TextView) rootView.findViewById(R.id.item_depart_point)).setText(mItem.getmDeparturePoint());
@@ -88,14 +89,15 @@ public class ItemDetailFragment extends Fragment {
                     ((TextView) rootView.findViewById(R.id.item_depart_time)).setText(mItem.getmDepartureTime());
                 }
                 if(mItem.getmDuration() != -1){
-                    ((TextView) rootView.findViewById(R.id.item_duration)).setText(String.valueOf(mItem.getmDuration()) + " hours");
+                    String s = String.valueOf(mItem.getmDuration()) + " " + getResources().getString(R.string.hours);
+                    ((TextView) rootView.findViewById(R.id.item_duration)).setText(s);
                 }
                 if(mItem.getmHighlights() != null){
-                    String displayTXT = "";
+                    StringBuilder displayTXT = new StringBuilder();
                     for(String str : mItem.getmHighlights()){
-                        displayTXT += str + "\n";
+                        displayTXT.append(str).append("\n");
                     }
-                    ((TextView) rootView.findViewById(R.id.item_highlights)).setText(displayTXT);
+                    ((TextView) rootView.findViewById(R.id.item_highlights)).setText(displayTXT.toString());
                 }
             }
 

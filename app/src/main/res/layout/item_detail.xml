@@ -48,7 +48,6 @@
             tools:textColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/highlights"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_description"
@@ -68,7 +67,6 @@
             tools:textColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/depart_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_highlights"
@@ -88,7 +86,6 @@
             tools:textColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/depart_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_depart_point"
@@ -108,7 +105,6 @@
             tools:textColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_depart_time"
@@ -127,7 +123,6 @@
             tools:textColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_duration"
@@ -156,7 +151,6 @@
         android:background="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/separator"
@@ -177,7 +171,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/item_address"
@@ -196,7 +189,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/item_visiting_hours"
@@ -216,7 +208,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/item_web"
@@ -236,7 +227,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/item_mail"

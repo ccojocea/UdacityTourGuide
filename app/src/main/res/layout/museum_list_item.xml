@@ -34,7 +34,6 @@
         tools:src="@drawable/museum_art_thumb" />
 
     <TextView
-        android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/separator"
@@ -55,7 +54,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/museum_address"
@@ -76,7 +74,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/museum_visiting_hours"
@@ -99,7 +96,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/museum_web"
@@ -122,7 +118,6 @@
         tools:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/museum_mail"
