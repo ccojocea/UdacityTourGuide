@@ -63,7 +63,7 @@ public class RestaurantFragment extends Fragment {
                 String mTitle = restaurants.get(position).getmName();
                 String mLat = restaurants.get(position).getmLat();
                 String mLong = restaurants.get(position).getmLong();
-                String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
+                String geoUri = getResources().getString(R.string.maps_google_com) + mLat + "," + mLong + " (" + mTitle + ")";
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
                 //noinspection ConstantConditions

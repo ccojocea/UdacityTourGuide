@@ -20,6 +20,7 @@ import android.view.MenuItem;
 public class ItemDetailActivity extends AppCompatActivity {
     private Item mItem;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,11 +59,11 @@ public class ItemDetailActivity extends AppCompatActivity {
         }
 
         //noinspection ConstantConditions
-        if(getIntent().getExtras().containsKey("TOUR")){
-            mItem = (Tour) getIntent().getExtras().getSerializable("TOUR");
+        if(getIntent().getExtras().containsKey(Item.TOUR)){
+            mItem = (Tour) getIntent().getExtras().getSerializable(Item.TOUR);
         }
-        if(getIntent().getExtras().containsKey("PARK")){
-            mItem = (Park) getIntent().getExtras().getSerializable("PARK");
+        if(getIntent().getExtras().containsKey(Item.PARK)){
+            mItem = (Park) getIntent().getExtras().getSerializable(Item.PARK);
         }
 
 
@@ -71,8 +72,8 @@ public class ItemDetailActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Open location on map", Snackbar.LENGTH_LONG)
-                        .setAction("MAP", new MyMapListener()).show();
+                Snackbar.make(view, getResources().getString(R.string.open_map), Snackbar.LENGTH_LONG)
+                        .setAction(getResources().getString(R.string.map), new MyMapListener()).show();
             }
         });
 
@@ -85,7 +86,7 @@ public class ItemDetailActivity extends AppCompatActivity {
             String mTitle = String.valueOf(mItem.getmName());
             String mLat = String.valueOf(mItem.getmLat());
             String mLong = String.valueOf(mItem.getmLong());
-            String geoUri = "http://maps.google.com/maps?q=loc:" + mLat + "," + mLong + " (" + mTitle + ")";
+            String geoUri = getString(R.string.maps_google_com) + mLat + "," + mLong + " (" + mTitle + ")";
             final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
             getApplicationContext().startActivity(intent);
         }

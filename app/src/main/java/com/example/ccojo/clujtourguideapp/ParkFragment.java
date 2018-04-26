@@ -48,7 +48,7 @@ public class ParkFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Context context = view.getContext();
                 Intent intent = new Intent(context, ItemDetailActivity.class);
-                intent.putExtra("PARK", parks.get(position));
+                intent.putExtra(Item.PARK, parks.get(position));
                 context.startActivity(intent);
             }
         });

@@ -59,7 +59,7 @@ public class TourFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Context context = view.getContext();
                 Intent intent = new Intent(context, ItemDetailActivity.class);
-                intent.putExtra("TOUR", tours.get(position));
+                intent.putExtra(Item.TOUR, tours.get(position));
                 context.startActivity(intent);
             }
         });

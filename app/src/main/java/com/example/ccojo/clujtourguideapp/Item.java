@@ -8,6 +8,9 @@ import java.io.Serializable;
 
 @SuppressWarnings({"CanBeFinal", "FieldCanBeLocal", "unused", "DefaultFileTemplate"})
 class Item implements Serializable{
+    static final String TOUR = "TOUR";
+    static final String PARK = "PARK";
+
     private String mShortName;
     private String mName;
     private String mAddress;

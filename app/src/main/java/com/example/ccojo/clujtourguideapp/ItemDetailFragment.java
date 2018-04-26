@@ -33,11 +33,11 @@ public class ItemDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         //noinspection ConstantConditions
-        if(getArguments().containsKey("PARK")){
-            mItem = (Park) getArguments().getSerializable("PARK");
+        if(getArguments().containsKey(Item.PARK)){
+            mItem = (Park) getArguments().getSerializable(Item.PARK);
         }
-        if(getArguments().containsKey("TOUR")){
-            mItem = (Tour) getArguments().getSerializable("TOUR");
+        if(getArguments().containsKey(Item.TOUR)){
+            mItem = (Tour) getArguments().getSerializable(Item.TOUR);
         }
     }
 

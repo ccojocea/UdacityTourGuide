@@ -37,4 +37,7 @@
     <string name="park_details">Touch to view more details about this park</string>
     <string name="hours">hours</string>
     <string name="unknown_name">Unknown name</string>
+    <string name="open_map">Open location on map</string>
+    <string name="map">Map</string>
+    <string name="maps_google_com">http://maps.google.com/maps?q=loc:</string>
 </resources>
